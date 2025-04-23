@@ -6,7 +6,7 @@
 /*   By: ypachkou <ypachkou@student.42prague.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/04/22 18:00:21 by ypachkou          #+#    #+#             */
-/*   Updated: 2025/04/22 18:10:38 by ypachkou         ###   ########.fr       */
+/*   Updated: 2025/04/23 19:22:55 by ypachkou         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -20,6 +20,7 @@ int	ft_sqrt(int nb)
 */
 {
 	int	i;
+    // todo: change to long int to solve for max_int
 
 	i = 0;
 	if (nb < 0)

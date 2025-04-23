@@ -1,12 +1,24 @@
+/* ************************************************************************** */
+/*                                                                            */
+/*                                                        :::      ::::::::   */
+/*   ft_ultimate_ft.c                                   :+:      :+:    :+:   */
+/*                                                    +:+ +:+         +:+     */
+/*   By: ypachkou <ypachkou@student.42prague.com    +#+  +:+       +#+        */
+/*                                                +#+#+#+#+#+   +#+           */
+/*   Created: 2025/04/15 15:27:59 by ypachkou          #+#    #+#             */
+/*   Updated: 2025/04/15 15:27:59 by ypachkou         ###   ########.fr       */
+/*                                                                            */
+/* ************************************************************************** */
+
 //#include <stdio.h>
 
-void ft_ultimate_ft(int *********nbr)
+void	ft_ultimate_ft(int *********nbr)
 /*
     Takes in adress of an adress of an adress...
     of int, changes whatever is there to 42
 */
 {
-    *********nbr = 42;
+	*********nbr = 42;
 }
 
 /*

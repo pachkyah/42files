@@ -6,7 +6,7 @@
 /*   By: ypachkou <ypachkou@student.42prague.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/04/22 18:35:44 by ypachkou          #+#    #+#             */
-/*   Updated: 2025/04/22 18:45:06 by ypachkou         ###   ########.fr       */
+/*   Updated: 2025/04/23 17:58:33 by ypachkou         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -44,11 +44,11 @@ int	ft_find_next_prime(int nb)
 	otherwise increases number and checks again
 */
 {
-    if (nb <= 2)
-        return (2);
-    while (!ft_is_prime(nb))
-        nb++;
-    return (nb);
+	if (nb <= 2)
+		return (2);
+	while (!ft_is_prime(nb))
+		nb++;
+	return (nb);
 }
 
 /*

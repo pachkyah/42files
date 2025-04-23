@@ -1,12 +1,12 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_putnbr.c                                        :+:      :+:    :+:   */
+/*   ft_print_program_name.c                            :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: ypachkou <ypachkou@student.42prague.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2025/04/12 14:49:04 by ypachkou          #+#    #+#             */
-/*   Updated: 2025/04/12 15:02:36 by ypachkou         ###   ########.fr       */
+/*   Created: 2025/04/23 18:43:23 by ypachkou          #+#    #+#             */
+/*   Updated: 2025/04/23 19:44:23 by ypachkou         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -21,42 +21,28 @@ void	ft_putchar(char c)
 	write(1, &c, 1);
 }
 
+void	ft_putstr(char const *str)
 /*
-	The function to display all possible values
-	of an int type variable on stdout:
-	first it checks the lowest int -2147483648,
-	then sign,
-	then works with single digits of positive int
+    This function that displays
+    a string of characters on the standard output
 */
-
-void	ft_putnbr(int nb)
 {
-	if (nb == -2147483648)
+	int	index;
+
+	index = 0;
+	while (str[index] != '\0')
 	{
-		ft_putchar('-');
-		ft_putchar('2');
-		nb = 147483648;
+		ft_putchar(str[index]);
+		index++;
 	}
-	if (nb < 0)
-	{
-		ft_putchar('-');
-		nb = -nb;
-	}
-	if (nb >= 10)
-	{
-		ft_putnbr(nb / 10);
-	}
-	ft_putchar(nb % 10 + '0');
 }
 
+int	main(int argc, char const *argv[])
 /*
-int	main(void)
+    this program prints out it's name
+*/
 {
-	ft_putnbr(42);
-	// ft_putnbr(12345);
-    // ft_putnbr(-12345);
-    // ft_putnbr(0);
-    // ft_putnbr(-2147483648);
+	ft_putstr(argv[0]);
+	ft_putchar('\n');
 	return (0);
 }
-*/

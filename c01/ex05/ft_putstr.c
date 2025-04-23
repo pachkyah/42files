@@ -1,3 +1,15 @@
+/* ************************************************************************** */
+/*                                                                            */
+/*                                                        :::      ::::::::   */
+/*   ft_putstr.c                                        :+:      :+:    :+:   */
+/*                                                    +:+ +:+         +:+     */
+/*   By: ypachkou <ypachkou@student.42prague.com    +#+  +:+       +#+        */
+/*                                                +#+#+#+#+#+   +#+           */
+/*   Created: 2025/04/15 15:38:10 by ypachkou          #+#    #+#             */
+/*   Updated: 2025/04/15 15:38:10 by ypachkou         ###   ########.fr       */
+/*                                                                            */
+/* ************************************************************************** */
+
 //#include <stdio.h>
 #include <unistd.h>
 
@@ -10,30 +22,28 @@ void	ft_putchar(char c)
 	write(1, &c, 1);
 }
 
-
-void ft_putstr(char *str)
+void	ft_putstr(char *str)
 /*
     This function that displays
     a string of characters on the standard output
 */
 {
-    int index;
+	int	index;
 
-    index = 0;
-    while (str[index] != '\0')
-    {
-        ft_putchar(str[index]);
-        index++;
-    }
-    
+	index = 0;
+	while (str[index] != '\0')
+	{
+		ft_putchar(str[index]);
+		index++;
+	}
 }
 
 /*
 int main()
 {
-    chat str[] = "hello"
+    char str[] = "hello";
 
-    ft_putstr(str)
+    ft_putstr(str);
     return 0;
 }
 */

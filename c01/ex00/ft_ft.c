@@ -6,18 +6,18 @@
 /*   By: ypachkou <ypachkou@student.42prague.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/04/12 18:25:39 by ypachkou          #+#    #+#             */
-/*   Updated: 2025/04/12 18:32:32 by ypachkou         ###   ########.fr       */
+/*   Updated: 2025/04/15 15:45:55 by ypachkou         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 //#include <stdio.h>
 
-void ft_ft(int *nbr)
+void	ft_ft(int *nbr)
 /*
     Takes in adress of int, changes whatever is there to 42
 */
 {
-    *nbr = 42;
+	*nbr = 42;
 }
 
 /*

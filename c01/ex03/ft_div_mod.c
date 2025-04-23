@@ -1,6 +1,18 @@
+/* ************************************************************************** */
+/*                                                                            */
+/*                                                        :::      ::::::::   */
+/*   ft_div_mod.c                                       :+:      :+:    :+:   */
+/*                                                    +:+ +:+         +:+     */
+/*   By: ypachkou <ypachkou@student.42prague.com    +#+  +:+       +#+        */
+/*                                                +#+#+#+#+#+   +#+           */
+/*   Created: 2025/04/15 15:30:08 by ypachkou          #+#    #+#             */
+/*   Updated: 2025/04/15 15:30:08 by ypachkou         ###   ########.fr       */
+/*                                                                            */
+/* ************************************************************************** */
+
 //#include <stdio.h>
 
-void ft_div_mod(int a, int b, int *div, int *mod)
+void	ft_div_mod(int a, int b, int *div, int *mod)
 /*
     This function divides int a by b
     and stores the result in div;
@@ -8,16 +20,16 @@ void ft_div_mod(int a, int b, int *div, int *mod)
     special case for 0;
 */
 {
-    if (b != 0)
-    {
-        *div = a / b;
-        *mod = a % b;
-    }
-    else
-    {
-        *div = 0;
-        *mod = 0;
-    }
+	if (b != 0)
+	{
+		*div = a / b;
+		*mod = a % b;
+	}
+	else
+	{
+		*div = 0;
+		*mod = 0;
+	}
 }
 
 /*

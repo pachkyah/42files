@@ -1,22 +1,35 @@
+/* ************************************************************************** */
+/*                                                                            */
+/*                                                        :::      ::::::::   */
+/*   ft_rev_int_tab.c                                   :+:      :+:    :+:   */
+/*                                                    +:+ +:+         +:+     */
+/*   By: ypachkou <ypachkou@student.42prague.com    +#+  +:+       +#+        */
+/*                                                +#+#+#+#+#+   +#+           */
+/*   Created: 2025/04/15 15:42:02 by ypachkou          #+#    #+#             */
+/*   Updated: 2025/04/15 15:42:02 by ypachkou         ###   ########.fr       */
+/*                                                                            */
+/* ************************************************************************** */
+
 //#include <stdio.h>
 
-void ft_rev_int_tab(int *tab, int size)
+void	ft_rev_int_tab(int *tab, int size)
 /*
     The function takes two arguments:
     a pointer to an int and the number of elements
     than reverses a given array of integers
 */
 {
-    int tmp;
-    int i = 0;
+	int	tmp;
+	int	i;
 
-    while (i < size / 2)
-    {
-        tmp = tab[i];
-        tab[i] = tab[size - 1 - i];
-        tab[size - 1 - i] = tmp;
-        i++;
-    }
+	i = 0;
+	while (i < size / 2)
+	{
+		tmp = tab[i];
+		tab[i] = tab[size - 1 - i];
+		tab[size - 1 - i] = tmp;
+		i++;
+	}
 }
 
 /*

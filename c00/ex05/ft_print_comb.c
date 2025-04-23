@@ -6,7 +6,7 @@
 /*   By: ypachkou <ypachkou@student.42prague.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/04/10 19:38:14 by ypachkou          #+#    #+#             */
-/*   Updated: 2025/04/11 20:12:15 by ypachkou         ###   ########.fr       */
+/*   Updated: 2025/04/12 14:42:10 by ypachkou         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -52,8 +52,10 @@ void	ft_print_comb(void)
 	}
 }
 
+/*
 int	main(void)
 {
 	ft_print_comb();
 	return (0);
 }
+*/
