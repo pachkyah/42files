@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   libft.h                                            :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: ypachkou <ypachkou@student.42prague.com    +#+  +:+       +#+        */
+/*   By: pachkyah <pachkyah@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/05/28 15:18:11 by ypachkou          #+#    #+#             */
-/*   Updated: 2025/06/01 02:38:51 by ypachkou         ###   ########.fr       */
+/*   Updated: 2025/06/22 17:44:09 by pachkyah         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -50,7 +50,23 @@ int	ft_tolower(int c);     // Converts to lowercase
 
 // Conversions and allocation
 int     ft_atoi(const char *str);  // Convert ASCII string to int
+char	*ft_itoa(int n);                        // Integer to ASCII string
 void    *ft_calloc(size_t num, size_t size); // Allocates zero-initialized memory
 char    *ft_strdup(const char *s);            // Duplicates a string
+
+// Output to file descriptor
+void	ft_putchar_fd(char c, int fd);          // Output char to fd
+void	ft_putstr_fd(char *s, int fd);           // Output string to fd
+void	ft_putnbr_fd(int n, int fd);              // Output number to fd
+
+// String manipulation
+char	*ft_substr(char const *s, unsigned int start, size_t len); // Returns substring
+char	*ft_strjoin(char const *s1, char const *s2);               // Concatenate two strings
+char	*ft_strtrim(char const *s1, char const *set);              // Trim chars from start and end
+char	**ft_split(char const *s, char c);                         // Split string by delimiter
+
+// String iteration
+char	*ft_strmapi(char const *s, char (*f)(unsigned int, char));  // Map function to each char (new string)
+void	ft_striteri(char *s, void (*f)(unsigned int, char *));       // Apply function to each char in place
 
 #endif

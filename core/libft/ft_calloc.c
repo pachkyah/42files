@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_calloc.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: ypachkou <ypachkou@student.42prague.com    +#+  +:+       +#+        */
+/*   By: pachkyah <pachkyah@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/05/19 11:24:40 by ypachkou          #+#    #+#             */
-/*   Updated: 2025/05/31 21:13:21 by ypachkou         ###   ########.fr       */
+/*   Updated: 2025/06/22 15:45:09 by pachkyah         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -27,7 +27,7 @@ void	*ft_calloc(size_t num, size_t size)
 	{
 		return (NULL);
 	}
-	ptr = malloc(total_size);
+	ptr = (void *)malloc(total_size);
 	if (ptr == NULL)
 	{
 		return (NULL);

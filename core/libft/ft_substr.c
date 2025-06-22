@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_substr.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: ypachkou <ypachkou@student.42prague.com    +#+  +:+       +#+        */
+/*   By: pachkyah <pachkyah@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/05/19 11:26:00 by ypachkou          #+#    #+#             */
-/*   Updated: 2025/06/01 02:54:40 by ypachkou         ###   ########.fr       */
+/*   Updated: 2025/06/22 16:12:15 by pachkyah         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,7 +14,7 @@
 
 char	*ft_substr(char const *s, unsigned int start, size_t len)
 /*
-	This function allocates memory (using malloc(3)) and returns
+	This function allocates memory and returns
 	a substring from the string ’s’.
 	The substring starts at index ’start’ and 
 	has a maximum length of ’len’.

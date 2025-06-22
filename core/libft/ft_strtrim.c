@@ -3,25 +3,28 @@
 /*                                                        :::      ::::::::   */
 /*   ft_strtrim.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: ypachkou <ypachkou@student.42prague.com    +#+  +:+       +#+        */
+/*   By: pachkyah <pachkyah@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/05/19 11:25:57 by ypachkou          #+#    #+#             */
-/*   Updated: 2025/06/01 09:58:21 by ypachkou         ###   ########.fr       */
+/*   Updated: 2025/06/22 16:34:27 by pachkyah         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-static int	is_in_set(char c, const char *set)
-{
-	while (*set)
-	{
-		if (*set == c)
-			return (1);
-		set++;
-	}
-	return (0);
-}
+// static int	is_in_set(char c, const char *set)
+// /*
+// 	Helper function for checking if character 'c' is in array 'set'
+// */
+// {
+// 	while (*set)
+// 	{
+// 		if (*set == c)
+// 			return (1);
+// 		set++;
+// 	}
+// 	return (0);
+// }
 
 char	*ft_strtrim(char const *s1, char const *set)
 /*
@@ -39,10 +42,10 @@ char	*ft_strtrim(char const *s1, char const *set)
 		return (NULL);
 	start = 0;
 	end = ft_strlen(s1);
-	while (s1[start] && is_in_set(s1[start], set))
-		start++;
-	while (end > start && is_in_set(s1[end - 1], set))
-		end--;
+	while (s1[start] && ft_strchr(set, s1[start]) != NULL )
+        start++;
+    while (end > start && ft_strchr(set, s1[end - 1]) != NULL)
+        end--;
 	len = end - start;
 	trimmed = (char *)malloc(len + 1);
 	if (!trimmed)
