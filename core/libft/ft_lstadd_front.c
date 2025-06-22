@@ -1,29 +1,24 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_bzero.c                                         :+:      :+:    :+:   */
+/*   ft_lstadd_front.c                                  :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: pachkyah <pachkyah@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2025/05/19 11:24:33 by ypachkou          #+#    #+#             */
-/*   Updated: 2025/06/22 22:37:21 by pachkyah         ###   ########.fr       */
+/*   Created: 2025/06/22 22:00:35 by pachkyah          #+#    #+#             */
+/*   Updated: 2025/06/22 22:02:16 by pachkyah         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-void	ft_bzero(void *ptr, size_t n)
+void ft_lstadd_front(t_list **lst, t_list *new)
 /*
-	This function fills a block of memory with a 0 value
+    This function adds the node ’new’ at the beginning of the list.
 */
 {
-	unsigned char	*p;
-	size_t			i;
-
-	p = ptr;
-	i = 0;
-	while (i < n)
-	{
-		p[i++] = 0;
-	}
+	if (!lst || !new)
+		return;
+	new->next = *lst;
+	*lst = new;
 }

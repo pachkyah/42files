@@ -1,29 +1,32 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_bzero.c                                         :+:      :+:    :+:   */
+/*   ft_lstclear.c                                      :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: pachkyah <pachkyah@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2025/05/19 11:24:33 by ypachkou          #+#    #+#             */
-/*   Updated: 2025/06/22 22:37:21 by pachkyah         ###   ########.fr       */
+/*   Created: 2025/06/22 22:10:39 by pachkyah          #+#    #+#             */
+/*   Updated: 2025/06/22 22:13:05 by pachkyah         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-void	ft_bzero(void *ptr, size_t n)
+void ft_lstclear(t_list **lst, void (*del)(void *))
 /*
-	This function fills a block of memory with a 0 value
+    This function deletes and frees the given node and all its
+    successors, using the function ’del’ and free(3).
+    Finally, set the pointer to the list to NULL.
 */
 {
-	unsigned char	*p;
-	size_t			i;
+	t_list *tmp;
 
-	p = ptr;
-	i = 0;
-	while (i < n)
+	if (!lst || !del)
+		return;
+	while (*lst)
 	{
-		p[i++] = 0;
+		tmp = (*lst)->next;
+		ft_lstdelone(*lst, del);
+		*lst = tmp;
 	}
 }

@@ -6,7 +6,7 @@
 /*   By: pachkyah <pachkyah@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/05/19 11:25:57 by ypachkou          #+#    #+#             */
-/*   Updated: 2025/06/22 16:34:27 by pachkyah         ###   ########.fr       */
+/*   Updated: 2025/06/22 22:33:05 by pachkyah         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -45,12 +45,14 @@ char	*ft_strtrim(char const *s1, char const *set)
 	while (s1[start] && ft_strchr(set, s1[start]) != NULL )
         start++;
     while (end > start && ft_strchr(set, s1[end - 1]) != NULL)
+	{
         end--;
+	}
 	len = end - start;
 	trimmed = (char *)malloc(len + 1);
 	if (!trimmed)
 		return (NULL);
-	memcpy(trimmed, s1 + start, len);
+	ft_memcpy(trimmed, s1 + start, len);
 	trimmed[len] = '\0';
 	return (trimmed);
 }

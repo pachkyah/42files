@@ -1,29 +1,31 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_bzero.c                                         :+:      :+:    :+:   */
+/*   ft_lstadd_back.c                                   :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: pachkyah <pachkyah@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2025/05/19 11:24:33 by ypachkou          #+#    #+#             */
-/*   Updated: 2025/06/22 22:37:21 by pachkyah         ###   ########.fr       */
+/*   Created: 2025/06/22 22:04:45 by pachkyah          #+#    #+#             */
+/*   Updated: 2025/06/22 22:07:42 by pachkyah         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-void	ft_bzero(void *ptr, size_t n)
+void ft_lstadd_back(t_list **lst, t_list *new)
 /*
-	This function fills a block of memory with a 0 value
+    This function adds the node ’new’ at the end of the list.
 */
 {
-	unsigned char	*p;
-	size_t			i;
+	t_list *last;
 
-	p = ptr;
-	i = 0;
-	while (i < n)
+	if (!lst || !new)
+		return;
+	if (*lst == NULL)
 	{
-		p[i++] = 0;
+		*lst = new;
+		return;
 	}
+	last = ft_lstlast(*lst);
+	last->next = new;
 }

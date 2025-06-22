@@ -1,29 +1,25 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_bzero.c                                         :+:      :+:    :+:   */
+/*   ft_lstlast.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: pachkyah <pachkyah@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2025/05/19 11:24:33 by ypachkou          #+#    #+#             */
-/*   Updated: 2025/06/22 22:37:21 by pachkyah         ###   ########.fr       */
+/*   Created: 2025/06/22 22:05:33 by pachkyah          #+#    #+#             */
+/*   Updated: 2025/06/22 22:06:09 by pachkyah         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-void	ft_bzero(void *ptr, size_t n)
+t_list *ft_lstlast(t_list *lst)
 /*
-	This function fills a block of memory with a 0 value
+    This function returns the last node of the list.
 */
 {
-	unsigned char	*p;
-	size_t			i;
-
-	p = ptr;
-	i = 0;
-	while (i < n)
-	{
-		p[i++] = 0;
-	}
+	if (!lst)
+		return (NULL);
+	while (lst->next)
+		lst = lst->next;
+	return (lst);
 }

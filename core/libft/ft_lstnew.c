@@ -1,29 +1,31 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_bzero.c                                         :+:      :+:    :+:   */
+/*   ft_lstnew.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: pachkyah <pachkyah@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2025/05/19 11:24:33 by ypachkou          #+#    #+#             */
-/*   Updated: 2025/06/22 22:37:21 by pachkyah         ###   ########.fr       */
+/*   Created: 2025/06/22 21:56:50 by pachkyah          #+#    #+#             */
+/*   Updated: 2025/06/22 21:59:10 by pachkyah         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-void	ft_bzero(void *ptr, size_t n)
+t_list *ft_lstnew(void *content)
 /*
-	This function fills a block of memory with a 0 value
+    This function allocates memory (using malloc(3)) and returns
+    a new node. The ’content’ member variable is
+    initialized with the given parameter ’content’.
+    The variable ’next’ is initialized to NULL.
 */
 {
-	unsigned char	*p;
-	size_t			i;
+	t_list *node;
 
-	p = ptr;
-	i = 0;
-	while (i < n)
-	{
-		p[i++] = 0;
-	}
+	node = (t_list *)malloc(sizeof(t_list));
+	if (!node)
+		return (NULL);
+	node->content = content;
+	node->next = NULL;
+	return (node);
 }
