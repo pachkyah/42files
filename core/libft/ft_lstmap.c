@@ -3,16 +3,16 @@
 /*                                                        :::      ::::::::   */
 /*   ft_lstmap.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: pachkyah <pachkyah@student.42.fr>          +#+  +:+       +#+        */
+/*   By: ypachkou <ypachkou@student.42prague.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/06/22 22:17:39 by pachkyah          #+#    #+#             */
-/*   Updated: 2025/06/22 22:20:48 by pachkyah         ###   ########.fr       */
+/*   Updated: 2025/06/23 17:30:26 by ypachkou         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-t_list *ft_lstmap(t_list *lst, void *(*f)(void *), void (*del)(void *))
+t_list	*ft_lstmap(t_list *lst, void *(*f)(void *), void (*del)(void *))
 /*
     This function iterates through the list ’lst’, applies the
     function ’f’ to each node’s content, and creates

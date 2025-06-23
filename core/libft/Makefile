@@ -37,10 +37,7 @@ bonus: $(OBJ) $(BONUS_OBJ)
 
 # Remove object files
 clean:
-	$(RM) $(OBJ)
-
-clean_bonus:
-	$(RM) $(BONUS_OBJ)
+	$(RM) $(OBJ) $(BONUS_OBJ)
 
 # Remove object files and the library
 fclean: clean
