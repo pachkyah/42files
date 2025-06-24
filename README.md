@@ -12,10 +12,10 @@ The files are organized by task. Each task may include:
 
 ### Example Layout
 
-tasks/
-├── task1_hello_world.c
-├── task2_loops.c
-├── task3_arrays.c
+tasks/ \n
+├── task1_hello_world.c \n
+├── task2_loops.c \n
+├── task3_arrays.c \n
 └── ...
 
 
