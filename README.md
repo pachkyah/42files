@@ -26,8 +26,9 @@ Use a C compiler like `gcc`. Example:
 ```bash
 gcc task1_hello_world.c -o hello
 ./hello
+```
 
-🎓 Course Context
+## 🎓 Course Context
 
 These tasks were completed as part of the [Course Name] at [Your School Name].
 Topics include:
@@ -44,7 +45,7 @@ Topics include:
 
     Structures
 
-✅ Notes
+## ✅ Notes
 
     All code follows C99 standard.
 
@@ -52,6 +53,6 @@ Topics include:
 
     You can reuse or modify code with proper credit.
 
-📬 Contact
+## 📬 Contact
 
 For questions or collaboration: your_email@example.com
