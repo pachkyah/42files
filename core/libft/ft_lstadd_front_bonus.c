@@ -1,27 +1,29 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_isprint.c                                       :+:      :+:    :+:   */
+/*   ft_lstadd_front.c                                  :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: pachkyah <pachkyah@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2025/05/19 11:24:56 by ypachkou          #+#    #+#             */
-/*   Updated: 2025/06/25 01:06:24 by pachkyah         ###   ########.fr       */
+/*   Created: 2025/06/22 22:00:35 by pachkyah          #+#    #+#             */
+/*   Updated: 2025/06/25 01:39:13 by pachkyah         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
 /**
- * @brief Checks if a character is printable.
+ * @brief Adds a node to the beginning of the list.
  *
- * Returns 1 if @p c is a printable character, including space,
- * and 0 otherwise. Printable characters have ASCII values from 32 to 126.
+ * Adds the node @p new at the beginning of the linked list pointed to by @p lst.
  *
- * @param c The character to check.
- * @return 1 if printable, 0 otherwise.
+ * @param lst Pointer to the head of the list.
+ * @param new The node to add.
  */
-int	ft_isprint(int c)
+void	ft_lstadd_front(t_list **lst, t_list *new)
 {
-	return (c >= 32 && c <= 126);
+	if (!lst || !new)
+		return ;
+	new->next = *lst;
+	*lst = new;
 }

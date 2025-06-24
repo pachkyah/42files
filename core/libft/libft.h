@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   libft.h                                            :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: ypachkou <ypachkou@student.42prague.com    +#+  +:+       +#+        */
+/*   By: pachkyah <pachkyah@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/05/28 15:18:11 by ypachkou          #+#    #+#             */
-/*   Updated: 2025/06/23 18:43:28 by ypachkou         ###   ########.fr       */
+/*   Updated: 2025/06/25 00:51:13 by pachkyah         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -76,8 +76,11 @@ void	ft_putchar_fd(char c, int fd);
 	// Output char to fd
 void	ft_putstr_fd(char *s, int fd);
 	// Output string to fd
+void	ft_putendl_fd(char *s, int fd);
+	// Output string to fd with new line
 void	ft_putnbr_fd(int n, int fd);
 	// Output number to fd
+
 
 // ---String manipulation
 char	*ft_substr(char const *s, unsigned int start, size_t len);

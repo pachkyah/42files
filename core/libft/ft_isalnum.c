@@ -3,21 +3,25 @@
 /*                                                        :::      ::::::::   */
 /*   ft_isalnum.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: ypachkou <ypachkou@student.42prague.com    +#+  +:+       +#+        */
+/*   By: pachkyah <pachkyah@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/05/19 11:24:43 by ypachkou          #+#    #+#             */
-/*   Updated: 2025/05/28 16:55:15 by ypachkou         ###   ########.fr       */
+/*   Updated: 2025/06/25 01:02:33 by pachkyah         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
+/**
+ * @brief Checks if a character is alphanumeric.
+ *
+ * Returns 1 if @p c is a letter (A-Z or a-z) or a digit (0-9),
+ * and 0 otherwise.
+ *
+ * @param c The character to check.
+ * @return 1 if alphanumeric, 0 otherwise.
+ */
 int	ft_isalnum(int c)
-/*
-	This is a function that:
-	returns 1 if given character is alphanumeric
-			0 if any other
-*/
 {
 	return (ft_isalpha(c) || ft_isdigit(c));
 }

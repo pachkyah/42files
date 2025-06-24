@@ -3,19 +3,26 @@
 /*                                                        :::      ::::::::   */
 /*   ft_split.c                                         :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: ypachkou <ypachkou@student.42prague.com    +#+  +:+       +#+        */
+/*   By: pachkyah <pachkyah@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/05/19 11:25:26 by ypachkou          #+#    #+#             */
-/*   Updated: 2025/06/23 17:46:40 by ypachkou         ###   ########.fr       */
+/*   Updated: 2025/06/25 01:20:47 by pachkyah         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
+/**
+ * @brief Counts the number of words separated by a delimiter.
+ *
+ * Helper function that counts how many substrings are separated
+ * by the character @p c in the string @p s.
+ *
+ * @param s The input string.
+ * @param c The delimiter character.
+ * @return The number of words found.
+ */
 static size_t	word_count(const char *s, char c)
-/*
-	Helper function for counting words (strings separated by character 'c')
-*/
 {
 	size_t	count;
 	int		in_word;
@@ -36,20 +43,35 @@ static size_t	word_count(const char *s, char c)
 	return (count);
 }
 
+/**
+ * @brief Frees allocated memory for an array of strings.
+ *
+ * Helper function that frees @p i elements in the array @p arr,
+ * used to clean up memory on failure.
+ *
+ * @param arr The array of strings to free.
+ * @param i The number of elements to free.
+ */
 static void	free_all(char **arr, size_t i)
-/*
-	Helper function for freeing allocated memory
-*/
 {
 	while (i--)
 		free(arr[i]);
 	free(arr);
 }
 
+/**
+ * @brief Extracts the next word from a string.
+ *
+ * Helper function that returns a newly allocated string containing
+ * the next word in @p s starting at @p *index, using @p c as delimiter.
+ * Updates @p *index to the position after the extracted word.
+ *
+ * @param s The input string.
+ * @param c The delimiter character.
+ * @param index Pointer to the current index in @p s.
+ * @return Newly allocated string containing the next word.
+ */
 static char	*next_word(const char *s, char c, size_t *index)
-/*
-	Helper function for creation of arrays for new words
-*/
 {
 	size_t	start;
 	size_t	end;
@@ -69,12 +91,18 @@ static char	*next_word(const char *s, char c, size_t *index)
 	return (NULL);
 }
 
+/**
+ * @brief Splits a string into an array of strings using a delimiter.
+ *
+ * Allocates memory and returns a NULL-terminated array of strings
+ * obtained by splitting the string @p s using the character @p c as
+ * a delimiter.
+ *
+ * @param s The string to split.
+ * @param c The delimiter character.
+ * @return A NULL-terminated array of strings, or NULL on allocation failure.
+ */
 char	**ft_split(char const *s, char c)
-/*
-    This function allocates memory (using malloc(3)) and returns an
-    array of strings obtained by splitting ’s’ using
-    the character ’c’ as a delimiter. The array ends with a NULL pointer.    
-*/
 {
 	char	**res;
 	size_t	new_start;

@@ -6,18 +6,24 @@
 /*   By: pachkyah <pachkyah@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/05/19 11:24:40 by ypachkou          #+#    #+#             */
-/*   Updated: 2025/06/22 15:45:09 by pachkyah         ###   ########.fr       */
+/*   Updated: 2025/06/25 01:01:45 by pachkyah         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
+/**
+ * @brief Allocates zero-initialized memory for an array.
+ *
+ * Allocates memory for an array of @p num elements of @p size bytes each,
+ * and sets all bytes to zero. Returns NULL if the allocation fails or if
+ * an integer overflow occurs.
+ *
+ * @param num Number of elements to allocate.
+ * @param size Size of each element in bytes.
+ * @return Pointer to the allocated memory, or NULL on failure.
+ */
 void	*ft_calloc(size_t num, size_t size)
-/*
-	This function allocates memory for an array
-	and initializes all bytes to zero;
-	Returnes NULL if memory overflow
-*/
 {
 	size_t	total_size;
 	void	*ptr;

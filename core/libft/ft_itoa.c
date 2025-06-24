@@ -3,19 +3,26 @@
 /*                                                        :::      ::::::::   */
 /*   ft_itoa.c                                          :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: ypachkou <ypachkou@student.42prague.com    +#+  +:+       +#+        */
+/*   By: pachkyah <pachkyah@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/05/19 11:25:00 by ypachkou          #+#    #+#             */
-/*   Updated: 2025/06/23 17:24:30 by ypachkou         ###   ########.fr       */
+/*   Updated: 2025/06/25 01:07:54 by pachkyah         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
+/**
+ * @brief Calculates the number of digits in an integer.
+ *
+ * Helper function that returns the number of digits required
+ * to represent @p n as a string, including space for the minus sign
+ * if the number is negative.
+ *
+ * @param n The integer to evaluate.
+ * @return Number of digits in @p n.
+ */
 static size_t	int_len(int n)
-/*
-	Helper function for counting digits in an int number
-*/
 {
 	size_t	len;
 	long	num;
@@ -35,12 +42,17 @@ static size_t	int_len(int n)
 	return (len);
 }
 
+/**
+ * @brief Converts an integer to a string.
+ *
+ * Allocates and returns a null-terminated string representing
+ * the integer @p n. Handles negative numbers and edge cases
+ * such as INT_MIN.
+ *
+ * @param n The integer to convert.
+ * @return Pointer to the resulting string, or NULL on failure.
+ */
 char	*ft_itoa(int n)
-/*
-    This function allocates memory  and returns
-    a string representing the integer received as an
-    argument. (int edge cases are handled)
-*/
 {
 	size_t	len;
 	char	*str;

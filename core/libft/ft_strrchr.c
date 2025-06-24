@@ -3,21 +3,27 @@
 /*                                                        :::      ::::::::   */
 /*   ft_strrchr.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: ypachkou <ypachkou@student.42prague.com    +#+  +:+       +#+        */
+/*   By: pachkyah <pachkyah@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/05/19 11:11:32 by ypachkou          #+#    #+#             */
-/*   Updated: 2025/05/31 23:48:27 by ypachkou         ###   ########.fr       */
+/*   Updated: 2025/06/25 01:22:25 by pachkyah         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
+/**
+ * @brief Finds the last occurrence of a character in a string.
+ *
+ * Searches the string @p str for the last occurrence of the character @p c,
+ * scanning from right to left. The terminating null byte is considered part
+ * of the string.
+ *
+ * @param str The string to search.
+ * @param c The character to find (converted to char).
+ * @return Pointer to the last occurrence of @p c in @p str, or NULL if not found.
+ */
 char	*ft_strrchr(const char *str, int c)
-/*
-	This function finds the first occurrence of a character 'c'
-	Searches right to left + special case '\0'
-	Returns pointer to the character
-*/
 {
 	const char	*last = NULL;
 

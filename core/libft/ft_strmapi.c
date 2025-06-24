@@ -6,20 +6,24 @@
 /*   By: pachkyah <pachkyah@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/05/19 11:25:47 by ypachkou          #+#    #+#             */
-/*   Updated: 2025/06/22 17:39:23 by pachkyah         ###   ########.fr       */
+/*   Updated: 2025/06/25 01:33:05 by pachkyah         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
+/**
+ * @brief Creates a new string by applying a function to each character.
+ *
+ * Applies the function @p f to each character of the string @p s,
+ * passing the character's index and the character itself. Returns a
+ * newly allocated string with the results of each function application.
+ *
+ * @param s The input string.
+ * @param f The function to apply to each character.
+ * @return A newly allocated string with transformed characters, or NULL on failure.
+ */
 char	*ft_strmapi(char const *s, char (*f)(unsigned int, char))
-/*
-    This function applies the function 'f' to each character of the
-    string 's', passing its index as the first argument
-    and the character itself as the second. A new
-    string is created (using malloc(3)) to store the
-    results from the successive applications of f.
-*/
 {
 	char	*res;
 	size_t	len;

@@ -3,22 +3,26 @@
 /*                                                        :::      ::::::::   */
 /*   ft_atoi.c                                          :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: ypachkou <ypachkou@student.42prague.com    +#+  +:+       +#+        */
+/*   By: pachkyah <pachkyah@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/05/19 11:24:29 by ypachkou          #+#    #+#             */
-/*   Updated: 2025/06/01 01:55:25 by ypachkou         ###   ########.fr       */
+/*   Updated: 2025/06/25 00:58:49 by pachkyah         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
+/**
+ * @brief Converts a string to an integer.
+ *
+ * This function skips leading whitespace characters, handles an optional
+ * '+' or '-' sign, and then converts the following digit characters
+ * into an integer value. It behaves similarly to the standard C `atoi`.
+ *
+ * @param str A pointer to the null-terminated string to convert.
+ * @return The converted integer. If no valid conversion is performed, returns 0.
+ */
 int	ft_atoi(const char *str)
-/*
-	This function reads integer from a string:
-	ignore space + \* characters
-	find sign
-	convert digits	
-*/
 {
 	int	i;
 	int	sign;

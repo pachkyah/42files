@@ -3,22 +3,28 @@
 /*                                                        :::      ::::::::   */
 /*   ft_strncmp.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: ypachkou <ypachkou@student.42prague.com    +#+  +:+       +#+        */
+/*   By: pachkyah <pachkyah@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/05/19 11:25:50 by ypachkou          #+#    #+#             */
-/*   Updated: 2025/06/01 00:49:06 by ypachkou         ###   ########.fr       */
+/*   Updated: 2025/06/25 01:33:54 by pachkyah         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
+/**
+ * @brief Compares up to n characters of two strings.
+ *
+ * Compares the first @p n characters of the strings @p s1 and @p s2.
+ * Returns 0 if they are equal, a negative value if @p s1 is less than @p s2,
+ * or a positive value if @p s1 is greater than @p s2.
+ *
+ * @param s1 The first string.
+ * @param s2 The second string.
+ * @param n The maximum number of characters to compare.
+ * @return An integer less than, equal to, or greater than zero.
+ */
 int	ft_strncmp(const char *s1, const char *s2, size_t n)
-/*
-	This function compares up to n characters of two strings.
-	0, if the s1 and s2 are equal;
-	a negative if n character value in s1 is less than s2;
-	a positive if n character value in s1 is greater than s2.
-*/
 {
 	size_t	i;
 

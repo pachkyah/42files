@@ -3,22 +3,28 @@
 /*                                                        :::      ::::::::   */
 /*   ft_strlcat.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: ypachkou <ypachkou@student.42prague.com    +#+  +:+       +#+        */
+/*   By: pachkyah <pachkyah@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/05/19 11:25:39 by ypachkou          #+#    #+#             */
-/*   Updated: 2025/06/01 02:32:57 by ypachkou         ###   ########.fr       */
+/*   Updated: 2025/06/25 01:28:10 by pachkyah         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
+/**
+ * @brief Appends src string to the end of dest string.
+ *
+ * Appends the string @p src to the end of @p dest, ensuring that
+ * the total length does not exceed @p size. The resulting string
+ * is null-terminated if @p size is greater than 0.
+ *
+ * @param dest The destination buffer.
+ * @param src The source string to append.
+ * @param size The full size of the destination buffer.
+ * @return The total length of the string it tried to create (initial length of dest plus length of src).
+ */
 size_t	ft_strlcat(char *dest, const char *src, size_t size)
-/*
-	This function appends the string src of size 'size' to the end of the string dest:
-	the result is stored in dest
-	if dest has enough space -> append src and return length of dest+src
-						else -> return length that needs to be avaliable
-*/
 {
 	size_t	dst_len;
 	size_t	src_len;

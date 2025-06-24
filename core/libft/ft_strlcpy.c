@@ -3,21 +3,27 @@
 /*                                                        :::      ::::::::   */
 /*   ft_strlcpy.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: ypachkou <ypachkou@student.42prague.com    +#+  +:+       +#+        */
+/*   By: pachkyah <pachkyah@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/05/19 11:25:42 by ypachkou          #+#    #+#             */
-/*   Updated: 2025/06/01 02:32:00 by ypachkou         ###   ########.fr       */
+/*   Updated: 2025/06/25 01:29:42 by pachkyah         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
+/**
+ * @brief Copies a string to a buffer of given size.
+ *
+ * Copies up to @p size - 1 characters from the string @p src to
+ * @p dest, null-terminating the result if @p size is not zero.
+ *
+ * @param dest The destination buffer.
+ * @param src The source string to copy.
+ * @param size The size of the destination buffer.
+ * @return The total length of the string it tried to create (length of src).
+ */
 size_t	ft_strlcpy(char *dest, const char *src, size_t size)
-/*
-	This function that counts and returns
-	the number of characters in a string, 
-	but also makes a copy of len "size" into dest string
-*/
 {
 	size_t	i;
 

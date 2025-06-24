@@ -1,27 +1,34 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_isprint.c                                       :+:      :+:    :+:   */
+/*   ft_lstsize.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: pachkyah <pachkyah@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2025/05/19 11:24:56 by ypachkou          #+#    #+#             */
-/*   Updated: 2025/06/25 01:06:24 by pachkyah         ###   ########.fr       */
+/*   Created: 2025/06/22 22:03:29 by pachkyah          #+#    #+#             */
+/*   Updated: 2025/06/25 01:41:57 by pachkyah         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
 /**
- * @brief Checks if a character is printable.
+ * @brief Counts the number of nodes in the list.
  *
- * Returns 1 if @p c is a printable character, including space,
- * and 0 otherwise. Printable characters have ASCII values from 32 to 126.
+ * Counts and returns the number of nodes in the linked list @p lst.
  *
- * @param c The character to check.
- * @return 1 if printable, 0 otherwise.
+ * @param lst Pointer to the head of the list.
+ * @return The number of nodes in the list.
  */
-int	ft_isprint(int c)
+int	ft_lstsize(t_list *lst)
 {
-	return (c >= 32 && c <= 126);
+	int	count;
+
+	count = 0;
+	while (lst)
+	{
+		count++;
+		lst = lst->next;
+	}
+	return (count);
 }

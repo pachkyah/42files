@@ -1,27 +1,32 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_isprint.c                                       :+:      :+:    :+:   */
+/*   ft_lstiter.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: pachkyah <pachkyah@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2025/05/19 11:24:56 by ypachkou          #+#    #+#             */
-/*   Updated: 2025/06/25 01:06:24 by pachkyah         ###   ########.fr       */
+/*   Created: 2025/06/22 22:16:15 by pachkyah          #+#    #+#             */
+/*   Updated: 2025/06/25 01:40:22 by pachkyah         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
 /**
- * @brief Checks if a character is printable.
+ * @brief Iterates over the list and applies a function to each node's content.
  *
- * Returns 1 if @p c is a printable character, including space,
- * and 0 otherwise. Printable characters have ASCII values from 32 to 126.
+ * Applies the function @p f to the content of each node in the linked list @p lst.
  *
- * @param c The character to check.
- * @return 1 if printable, 0 otherwise.
+ * @param lst Pointer to the head of the list.
+ * @param f Function to apply to each node's content.
  */
-int	ft_isprint(int c)
+void	ft_lstiter(t_list *lst, void (*f)(void *))
 {
-	return (c >= 32 && c <= 126);
+	if (!lst || !f)
+		return ;
+	while (lst)
+	{
+		f(lst->content);
+		lst = lst->next;
+	}
 }

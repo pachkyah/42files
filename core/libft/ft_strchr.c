@@ -3,21 +3,27 @@
 /*                                                        :::      ::::::::   */
 /*   ft_strchr.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: ypachkou <ypachkou@student.42prague.com    +#+  +:+       +#+        */
+/*   By: pachkyah <pachkyah@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/05/19 11:25:29 by ypachkou          #+#    #+#             */
-/*   Updated: 2025/05/31 23:48:24 by ypachkou         ###   ########.fr       */
+/*   Updated: 2025/06/25 01:22:57 by pachkyah         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
+/**
+ * @brief Finds the first occurrence of a character in a string.
+ *
+ * Searches the string @p str for the first occurrence of the character @p c,
+ * scanning from left to right. The terminating null byte is considered part
+ * of the string.
+ *
+ * @param str The string to search.
+ * @param c The character to find (converted to char).
+ * @return Pointer to the first occurrence of @p c in @p str, or NULL if not found.
+ */
 char	*ft_strchr(const char *str, int c)
-/*
-	This function finds the first occurrence of a character 'c'
-	Searches left to right + special case '\0'
-	Returns pointer to the character
-*/
 {
 	while (*str)
 	{

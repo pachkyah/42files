@@ -3,19 +3,25 @@
 /*                                                        :::      ::::::::   */
 /*   ft_memmove.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: ypachkou <ypachkou@student.42prague.com    +#+  +:+       +#+        */
+/*   By: pachkyah <pachkyah@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/05/19 11:25:10 by ypachkou          #+#    #+#             */
-/*   Updated: 2025/06/01 02:26:53 by ypachkou         ###   ########.fr       */
+/*   Updated: 2025/06/25 01:12:49 by pachkyah         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
+/**
+ * @brief Helper function for forward memory copy.
+ *
+ * Copies @p n bytes from @p s to @p d in increasing memory address order.
+ *
+ * @param d Destination pointer.
+ * @param s Source pointer.
+ * @param n Number of bytes to copy.
+ */
 static void	memmove_forward(unsigned char *d, const unsigned char *s, size_t n)
-/*
-	Helper function for forward copy
-*/
 {
 	size_t	i;
 
@@ -27,10 +33,16 @@ static void	memmove_forward(unsigned char *d, const unsigned char *s, size_t n)
 	}
 }
 
+/**
+ * @brief Helper function for backward memory copy.
+ *
+ * Copies @p n bytes from @p s to @p d in decreasing memory address order.
+ *
+ * @param d Destination pointer.
+ * @param s Source pointer.
+ * @param n Number of bytes to copy.
+ */
 static void	memmove_backward(unsigned char *d, const unsigned char *s, size_t n)
-/*
-	Helper function for backward copy
-*/
 {
 	while (n > 0)
 	{
@@ -39,12 +51,19 @@ static void	memmove_backward(unsigned char *d, const unsigned char *s, size_t n)
 	}
 }
 
+/**
+ * @brief Copies bytes between potentially overlapping memory areas.
+ *
+ * Copies @p n bytes from memory area @p src to memory area @p dest.
+ * The copy is performed safely even if the memory areas overlap,
+ * by choosing the appropriate copy direction.
+ *
+ * @param dest Pointer to the destination memory area.
+ * @param src Pointer to the source memory area.
+ * @param n Number of bytes to copy.
+ * @return Pointer to the destination memory area @p dest.
+ */
 void	*ft_memmove(void *dest, const void *src, size_t n)
-/*
-	This function copies n bytes from memory area src to memory area dest.
-	The memory areas may overlap: copy direction is chosen based on relative addresses
-	to prevent overwriting bytes.
-*/
 {
 	unsigned char		*d;
 	const unsigned char	*s;

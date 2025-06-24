@@ -3,22 +3,28 @@
 /*                                                        :::      ::::::::   */
 /*   ft_strnstr.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: ypachkou <ypachkou@student.42prague.com    +#+  +:+       +#+        */
+/*   By: pachkyah <pachkyah@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/05/19 11:25:53 by ypachkou          #+#    #+#             */
-/*   Updated: 2025/06/01 01:43:45 by ypachkou         ###   ########.fr       */
+/*   Updated: 2025/06/25 01:34:15 by pachkyah         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
+/**
+ * @brief Locates a substring in a string, limited by length.
+ *
+ * Searches for the first occurrence of the substring @p needle
+ * in the first @p len characters of the string @p hay.
+ * Returns a pointer to the beginning of the substring, or NULL if not found.
+ *
+ * @param hay The string to search in.
+ * @param needle The substring to find.
+ * @param len The maximum number of characters to search.
+ * @return Pointer to the first occurrence of @p needle, or NULL if not found.
+ */
 char	*ft_strnstr(const char *hay, const char *needle, size_t len)
-/*
-	This function searches for a substring 'needle'
-	in the first 'len' characters of a string 'hay',
-	and returns a pointer to the first occurrence,
-	or NULL if not found.
-*/
 {
 	size_t	i;
 	size_t	j;

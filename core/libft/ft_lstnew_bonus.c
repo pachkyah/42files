@@ -1,42 +1,34 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_strdup.c                                        :+:      :+:    :+:   */
+/*   ft_lstnew.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: pachkyah <pachkyah@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2025/05/19 11:25:31 by ypachkou          #+#    #+#             */
-/*   Updated: 2025/06/25 01:26:06 by pachkyah         ###   ########.fr       */
+/*   Created: 2025/06/22 21:56:50 by pachkyah          #+#    #+#             */
+/*   Updated: 2025/06/25 01:41:16 by pachkyah         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
 /**
- * @brief Duplicates a string.
+ * @brief Creates a new node.
  *
- * Allocates memory and returns a new string which is a duplicate
- * of the string @p s.
+ * Allocates memory for a new node, initializes its content
+ * with @p content, and sets the next pointer to NULL.
  *
- * @param s The string to duplicate.
- * @return Pointer to the newly allocated duplicate string, or NULL on failure.
+ * @param content The content to store in the new node.
+ * @return Pointer to the newly allocated node, or NULL on failure.
  */
-char	*ft_strdup(const char *s)
+t_list	*ft_lstnew(void *content)
 {
-	size_t	len;
-	char	*dup;
-	size_t	i;
+	t_list	*node;
 
-	len = ft_strlen(s);
-	i = 0;
-	dup = (char *)malloc(len + 1);
-	if (!dup)
+	node = (t_list *)malloc(sizeof(t_list));
+	if (!node)
 		return (NULL);
-	while (s[i])
-	{
-		dup[i] = s[i];
-		i++;
-	}
-	dup[i] = '\0';
-	return (dup);
+	node->content = content;
+	node->next = NULL;
+	return (node);
 }

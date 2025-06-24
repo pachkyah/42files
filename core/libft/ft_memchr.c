@@ -3,23 +3,28 @@
 /*                                                        :::      ::::::::   */
 /*   ft_memchr.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: ypachkou <ypachkou@student.42prague.com    +#+  +:+       +#+        */
+/*   By: pachkyah <pachkyah@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/05/19 11:25:03 by ypachkou          #+#    #+#             */
-/*   Updated: 2025/06/01 01:06:45 by ypachkou         ###   ########.fr       */
+/*   Updated: 2025/06/25 01:09:06 by pachkyah         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
+/**
+ * @brief Searches for a byte in a memory block.
+ *
+ * Scans the first @p n bytes of the memory area pointed to by @p s
+ * for the first occurrence of the byte @p c. The search does not
+ * stop at null bytes or newline characters!!!
+ *
+ * @param s Pointer to the memory area to search.
+ * @param c Byte to search for (interpreted as unsigned char).
+ * @param n Number of bytes to scan.
+ * @return Pointer to the matching byte, or NULL if not found.
+ */
 void	*ft_memchr(const void *s, int c, size_t n)
-/*
-	This function searches for the first occurrence
-	of a byte 'c' in a memory block 's' of given size 'n'.
-	Returns a pointer to the first matching byte, or
-	NULL if the byte is not found
-	!!!Does not check for end of string or line!!!
-*/
 {
 	const unsigned char	*ptr;
 	size_t				i;
