@@ -1,0 +1,750 @@
+[
+  {
+    "arguments": [
+      "/usr/bin/cc",
+      "-Wall",
+      "-Wextra",
+      "-Werror",
+      "-c",
+      "-o",
+      "ft_isalpha.o",
+      "ft_isalpha.c"
+    ],
+    "directory": "/home/pachkyah/studying/Programming/42/42files/core/push_swap/libft",
+    "file": "/home/pachkyah/studying/Programming/42/42files/core/push_swap/libft/ft_isalpha.c",
+    "output": "/home/pachkyah/studying/Programming/42/42files/core/push_swap/libft/ft_isalpha.o"
+  },
+  {
+    "arguments": [
+      "/usr/bin/cc",
+      "-Wall",
+      "-Wextra",
+      "-Werror",
+      "-c",
+      "-o",
+      "ft_isdigit.o",
+      "ft_isdigit.c"
+    ],
+    "directory": "/home/pachkyah/studying/Programming/42/42files/core/push_swap/libft",
+    "file": "/home/pachkyah/studying/Programming/42/42files/core/push_swap/libft/ft_isdigit.c",
+    "output": "/home/pachkyah/studying/Programming/42/42files/core/push_swap/libft/ft_isdigit.o"
+  },
+  {
+    "arguments": [
+      "/usr/bin/cc",
+      "-Wall",
+      "-Wextra",
+      "-Werror",
+      "-c",
+      "-o",
+      "ft_isalnum.o",
+      "ft_isalnum.c"
+    ],
+    "directory": "/home/pachkyah/studying/Programming/42/42files/core/push_swap/libft",
+    "file": "/home/pachkyah/studying/Programming/42/42files/core/push_swap/libft/ft_isalnum.c",
+    "output": "/home/pachkyah/studying/Programming/42/42files/core/push_swap/libft/ft_isalnum.o"
+  },
+  {
+    "arguments": [
+      "/usr/bin/cc",
+      "-Wall",
+      "-Wextra",
+      "-Werror",
+      "-c",
+      "-o",
+      "ft_isascii.o",
+      "ft_isascii.c"
+    ],
+    "directory": "/home/pachkyah/studying/Programming/42/42files/core/push_swap/libft",
+    "file": "/home/pachkyah/studying/Programming/42/42files/core/push_swap/libft/ft_isascii.c",
+    "output": "/home/pachkyah/studying/Programming/42/42files/core/push_swap/libft/ft_isascii.o"
+  },
+  {
+    "arguments": [
+      "/usr/bin/cc",
+      "-Wall",
+      "-Wextra",
+      "-Werror",
+      "-c",
+      "-o",
+      "ft_isprint.o",
+      "ft_isprint.c"
+    ],
+    "directory": "/home/pachkyah/studying/Programming/42/42files/core/push_swap/libft",
+    "file": "/home/pachkyah/studying/Programming/42/42files/core/push_swap/libft/ft_isprint.c",
+    "output": "/home/pachkyah/studying/Programming/42/42files/core/push_swap/libft/ft_isprint.o"
+  },
+  {
+    "arguments": [
+      "/usr/bin/cc",
+      "-Wall",
+      "-Wextra",
+      "-Werror",
+      "-c",
+      "-o",
+      "ft_strlen.o",
+      "ft_strlen.c"
+    ],
+    "directory": "/home/pachkyah/studying/Programming/42/42files/core/push_swap/libft",
+    "file": "/home/pachkyah/studying/Programming/42/42files/core/push_swap/libft/ft_strlen.c",
+    "output": "/home/pachkyah/studying/Programming/42/42files/core/push_swap/libft/ft_strlen.o"
+  },
+  {
+    "arguments": [
+      "/usr/bin/cc",
+      "-Wall",
+      "-Wextra",
+      "-Werror",
+      "-c",
+      "-o",
+      "ft_memset.o",
+      "ft_memset.c"
+    ],
+    "directory": "/home/pachkyah/studying/Programming/42/42files/core/push_swap/libft",
+    "file": "/home/pachkyah/studying/Programming/42/42files/core/push_swap/libft/ft_memset.c",
+    "output": "/home/pachkyah/studying/Programming/42/42files/core/push_swap/libft/ft_memset.o"
+  },
+  {
+    "arguments": [
+      "/usr/bin/cc",
+      "-Wall",
+      "-Wextra",
+      "-Werror",
+      "-c",
+      "-o",
+      "ft_bzero.o",
+      "ft_bzero.c"
+    ],
+    "directory": "/home/pachkyah/studying/Programming/42/42files/core/push_swap/libft",
+    "file": "/home/pachkyah/studying/Programming/42/42files/core/push_swap/libft/ft_bzero.c",
+    "output": "/home/pachkyah/studying/Programming/42/42files/core/push_swap/libft/ft_bzero.o"
+  },
+  {
+    "arguments": [
+      "/usr/bin/cc",
+      "-Wall",
+      "-Wextra",
+      "-Werror",
+      "-c",
+      "-o",
+      "ft_memcpy.o",
+      "ft_memcpy.c"
+    ],
+    "directory": "/home/pachkyah/studying/Programming/42/42files/core/push_swap/libft",
+    "file": "/home/pachkyah/studying/Programming/42/42files/core/push_swap/libft/ft_memcpy.c",
+    "output": "/home/pachkyah/studying/Programming/42/42files/core/push_swap/libft/ft_memcpy.o"
+  },
+  {
+    "arguments": [
+      "/usr/bin/cc",
+      "-Wall",
+      "-Wextra",
+      "-Werror",
+      "-c",
+      "-o",
+      "ft_memmove.o",
+      "ft_memmove.c"
+    ],
+    "directory": "/home/pachkyah/studying/Programming/42/42files/core/push_swap/libft",
+    "file": "/home/pachkyah/studying/Programming/42/42files/core/push_swap/libft/ft_memmove.c",
+    "output": "/home/pachkyah/studying/Programming/42/42files/core/push_swap/libft/ft_memmove.o"
+  },
+  {
+    "arguments": [
+      "/usr/bin/cc",
+      "-Wall",
+      "-Wextra",
+      "-Werror",
+      "-c",
+      "-o",
+      "ft_strlcpy.o",
+      "ft_strlcpy.c"
+    ],
+    "directory": "/home/pachkyah/studying/Programming/42/42files/core/push_swap/libft",
+    "file": "/home/pachkyah/studying/Programming/42/42files/core/push_swap/libft/ft_strlcpy.c",
+    "output": "/home/pachkyah/studying/Programming/42/42files/core/push_swap/libft/ft_strlcpy.o"
+  },
+  {
+    "arguments": [
+      "/usr/bin/cc",
+      "-Wall",
+      "-Wextra",
+      "-Werror",
+      "-c",
+      "-o",
+      "ft_strlcat.o",
+      "ft_strlcat.c"
+    ],
+    "directory": "/home/pachkyah/studying/Programming/42/42files/core/push_swap/libft",
+    "file": "/home/pachkyah/studying/Programming/42/42files/core/push_swap/libft/ft_strlcat.c",
+    "output": "/home/pachkyah/studying/Programming/42/42files/core/push_swap/libft/ft_strlcat.o"
+  },
+  {
+    "arguments": [
+      "/usr/bin/cc",
+      "-Wall",
+      "-Wextra",
+      "-Werror",
+      "-c",
+      "-o",
+      "ft_toupper.o",
+      "ft_toupper.c"
+    ],
+    "directory": "/home/pachkyah/studying/Programming/42/42files/core/push_swap/libft",
+    "file": "/home/pachkyah/studying/Programming/42/42files/core/push_swap/libft/ft_toupper.c",
+    "output": "/home/pachkyah/studying/Programming/42/42files/core/push_swap/libft/ft_toupper.o"
+  },
+  {
+    "arguments": [
+      "/usr/bin/cc",
+      "-Wall",
+      "-Wextra",
+      "-Werror",
+      "-c",
+      "-o",
+      "ft_tolower.o",
+      "ft_tolower.c"
+    ],
+    "directory": "/home/pachkyah/studying/Programming/42/42files/core/push_swap/libft",
+    "file": "/home/pachkyah/studying/Programming/42/42files/core/push_swap/libft/ft_tolower.c",
+    "output": "/home/pachkyah/studying/Programming/42/42files/core/push_swap/libft/ft_tolower.o"
+  },
+  {
+    "arguments": [
+      "/usr/bin/cc",
+      "-Wall",
+      "-Wextra",
+      "-Werror",
+      "-c",
+      "-o",
+      "ft_strchr.o",
+      "ft_strchr.c"
+    ],
+    "directory": "/home/pachkyah/studying/Programming/42/42files/core/push_swap/libft",
+    "file": "/home/pachkyah/studying/Programming/42/42files/core/push_swap/libft/ft_strchr.c",
+    "output": "/home/pachkyah/studying/Programming/42/42files/core/push_swap/libft/ft_strchr.o"
+  },
+  {
+    "arguments": [
+      "/usr/bin/cc",
+      "-Wall",
+      "-Wextra",
+      "-Werror",
+      "-c",
+      "-o",
+      "ft_strrchr.o",
+      "ft_strrchr.c"
+    ],
+    "directory": "/home/pachkyah/studying/Programming/42/42files/core/push_swap/libft",
+    "file": "/home/pachkyah/studying/Programming/42/42files/core/push_swap/libft/ft_strrchr.c",
+    "output": "/home/pachkyah/studying/Programming/42/42files/core/push_swap/libft/ft_strrchr.o"
+  },
+  {
+    "arguments": [
+      "/usr/bin/cc",
+      "-Wall",
+      "-Wextra",
+      "-Werror",
+      "-c",
+      "-o",
+      "ft_strncmp.o",
+      "ft_strncmp.c"
+    ],
+    "directory": "/home/pachkyah/studying/Programming/42/42files/core/push_swap/libft",
+    "file": "/home/pachkyah/studying/Programming/42/42files/core/push_swap/libft/ft_strncmp.c",
+    "output": "/home/pachkyah/studying/Programming/42/42files/core/push_swap/libft/ft_strncmp.o"
+  },
+  {
+    "arguments": [
+      "/usr/bin/cc",
+      "-Wall",
+      "-Wextra",
+      "-Werror",
+      "-c",
+      "-o",
+      "ft_memchr.o",
+      "ft_memchr.c"
+    ],
+    "directory": "/home/pachkyah/studying/Programming/42/42files/core/push_swap/libft",
+    "file": "/home/pachkyah/studying/Programming/42/42files/core/push_swap/libft/ft_memchr.c",
+    "output": "/home/pachkyah/studying/Programming/42/42files/core/push_swap/libft/ft_memchr.o"
+  },
+  {
+    "arguments": [
+      "/usr/bin/cc",
+      "-Wall",
+      "-Wextra",
+      "-Werror",
+      "-c",
+      "-o",
+      "ft_memcmp.o",
+      "ft_memcmp.c"
+    ],
+    "directory": "/home/pachkyah/studying/Programming/42/42files/core/push_swap/libft",
+    "file": "/home/pachkyah/studying/Programming/42/42files/core/push_swap/libft/ft_memcmp.c",
+    "output": "/home/pachkyah/studying/Programming/42/42files/core/push_swap/libft/ft_memcmp.o"
+  },
+  {
+    "arguments": [
+      "/usr/bin/cc",
+      "-Wall",
+      "-Wextra",
+      "-Werror",
+      "-c",
+      "-o",
+      "ft_strnstr.o",
+      "ft_strnstr.c"
+    ],
+    "directory": "/home/pachkyah/studying/Programming/42/42files/core/push_swap/libft",
+    "file": "/home/pachkyah/studying/Programming/42/42files/core/push_swap/libft/ft_strnstr.c",
+    "output": "/home/pachkyah/studying/Programming/42/42files/core/push_swap/libft/ft_strnstr.o"
+  },
+  {
+    "arguments": [
+      "/usr/bin/cc",
+      "-Wall",
+      "-Wextra",
+      "-Werror",
+      "-c",
+      "-o",
+      "ft_atoi.o",
+      "ft_atoi.c"
+    ],
+    "directory": "/home/pachkyah/studying/Programming/42/42files/core/push_swap/libft",
+    "file": "/home/pachkyah/studying/Programming/42/42files/core/push_swap/libft/ft_atoi.c",
+    "output": "/home/pachkyah/studying/Programming/42/42files/core/push_swap/libft/ft_atoi.o"
+  },
+  {
+    "arguments": [
+      "/usr/bin/cc",
+      "-Wall",
+      "-Wextra",
+      "-Werror",
+      "-c",
+      "-o",
+      "ft_calloc.o",
+      "ft_calloc.c"
+    ],
+    "directory": "/home/pachkyah/studying/Programming/42/42files/core/push_swap/libft",
+    "file": "/home/pachkyah/studying/Programming/42/42files/core/push_swap/libft/ft_calloc.c",
+    "output": "/home/pachkyah/studying/Programming/42/42files/core/push_swap/libft/ft_calloc.o"
+  },
+  {
+    "arguments": [
+      "/usr/bin/cc",
+      "-Wall",
+      "-Wextra",
+      "-Werror",
+      "-c",
+      "-o",
+      "ft_strdup.o",
+      "ft_strdup.c"
+    ],
+    "directory": "/home/pachkyah/studying/Programming/42/42files/core/push_swap/libft",
+    "file": "/home/pachkyah/studying/Programming/42/42files/core/push_swap/libft/ft_strdup.c",
+    "output": "/home/pachkyah/studying/Programming/42/42files/core/push_swap/libft/ft_strdup.o"
+  },
+  {
+    "arguments": [
+      "/usr/bin/cc",
+      "-Wall",
+      "-Wextra",
+      "-Werror",
+      "-c",
+      "-o",
+      "ft_itoa.o",
+      "ft_itoa.c"
+    ],
+    "directory": "/home/pachkyah/studying/Programming/42/42files/core/push_swap/libft",
+    "file": "/home/pachkyah/studying/Programming/42/42files/core/push_swap/libft/ft_itoa.c",
+    "output": "/home/pachkyah/studying/Programming/42/42files/core/push_swap/libft/ft_itoa.o"
+  },
+  {
+    "arguments": [
+      "/usr/bin/cc",
+      "-Wall",
+      "-Wextra",
+      "-Werror",
+      "-c",
+      "-o",
+      "ft_putchar_fd.o",
+      "ft_putchar_fd.c"
+    ],
+    "directory": "/home/pachkyah/studying/Programming/42/42files/core/push_swap/libft",
+    "file": "/home/pachkyah/studying/Programming/42/42files/core/push_swap/libft/ft_putchar_fd.c",
+    "output": "/home/pachkyah/studying/Programming/42/42files/core/push_swap/libft/ft_putchar_fd.o"
+  },
+  {
+    "arguments": [
+      "/usr/bin/cc",
+      "-Wall",
+      "-Wextra",
+      "-Werror",
+      "-c",
+      "-o",
+      "ft_putstr_fd.o",
+      "ft_putstr_fd.c"
+    ],
+    "directory": "/home/pachkyah/studying/Programming/42/42files/core/push_swap/libft",
+    "file": "/home/pachkyah/studying/Programming/42/42files/core/push_swap/libft/ft_putstr_fd.c",
+    "output": "/home/pachkyah/studying/Programming/42/42files/core/push_swap/libft/ft_putstr_fd.o"
+  },
+  {
+    "arguments": [
+      "/usr/bin/cc",
+      "-Wall",
+      "-Wextra",
+      "-Werror",
+      "-c",
+      "-o",
+      "ft_putendl_fd.o",
+      "ft_putendl_fd.c"
+    ],
+    "directory": "/home/pachkyah/studying/Programming/42/42files/core/push_swap/libft",
+    "file": "/home/pachkyah/studying/Programming/42/42files/core/push_swap/libft/ft_putendl_fd.c",
+    "output": "/home/pachkyah/studying/Programming/42/42files/core/push_swap/libft/ft_putendl_fd.o"
+  },
+  {
+    "arguments": [
+      "/usr/bin/cc",
+      "-Wall",
+      "-Wextra",
+      "-Werror",
+      "-c",
+      "-o",
+      "ft_putnbr_fd.o",
+      "ft_putnbr_fd.c"
+    ],
+    "directory": "/home/pachkyah/studying/Programming/42/42files/core/push_swap/libft",
+    "file": "/home/pachkyah/studying/Programming/42/42files/core/push_swap/libft/ft_putnbr_fd.c",
+    "output": "/home/pachkyah/studying/Programming/42/42files/core/push_swap/libft/ft_putnbr_fd.o"
+  },
+  {
+    "arguments": [
+      "/usr/bin/cc",
+      "-Wall",
+      "-Wextra",
+      "-Werror",
+      "-c",
+      "-o",
+      "ft_substr.o",
+      "ft_substr.c"
+    ],
+    "directory": "/home/pachkyah/studying/Programming/42/42files/core/push_swap/libft",
+    "file": "/home/pachkyah/studying/Programming/42/42files/core/push_swap/libft/ft_substr.c",
+    "output": "/home/pachkyah/studying/Programming/42/42files/core/push_swap/libft/ft_substr.o"
+  },
+  {
+    "arguments": [
+      "/usr/bin/cc",
+      "-Wall",
+      "-Wextra",
+      "-Werror",
+      "-c",
+      "-o",
+      "ft_strjoin.o",
+      "ft_strjoin.c"
+    ],
+    "directory": "/home/pachkyah/studying/Programming/42/42files/core/push_swap/libft",
+    "file": "/home/pachkyah/studying/Programming/42/42files/core/push_swap/libft/ft_strjoin.c",
+    "output": "/home/pachkyah/studying/Programming/42/42files/core/push_swap/libft/ft_strjoin.o"
+  },
+  {
+    "arguments": [
+      "/usr/bin/cc",
+      "-Wall",
+      "-Wextra",
+      "-Werror",
+      "-c",
+      "-o",
+      "ft_strtrim.o",
+      "ft_strtrim.c"
+    ],
+    "directory": "/home/pachkyah/studying/Programming/42/42files/core/push_swap/libft",
+    "file": "/home/pachkyah/studying/Programming/42/42files/core/push_swap/libft/ft_strtrim.c",
+    "output": "/home/pachkyah/studying/Programming/42/42files/core/push_swap/libft/ft_strtrim.o"
+  },
+  {
+    "arguments": [
+      "/usr/bin/cc",
+      "-Wall",
+      "-Wextra",
+      "-Werror",
+      "-c",
+      "-o",
+      "ft_split.o",
+      "ft_split.c"
+    ],
+    "directory": "/home/pachkyah/studying/Programming/42/42files/core/push_swap/libft",
+    "file": "/home/pachkyah/studying/Programming/42/42files/core/push_swap/libft/ft_split.c",
+    "output": "/home/pachkyah/studying/Programming/42/42files/core/push_swap/libft/ft_split.o"
+  },
+  {
+    "arguments": [
+      "/usr/bin/cc",
+      "-Wall",
+      "-Wextra",
+      "-Werror",
+      "-c",
+      "-o",
+      "ft_strmapi.o",
+      "ft_strmapi.c"
+    ],
+    "directory": "/home/pachkyah/studying/Programming/42/42files/core/push_swap/libft",
+    "file": "/home/pachkyah/studying/Programming/42/42files/core/push_swap/libft/ft_strmapi.c",
+    "output": "/home/pachkyah/studying/Programming/42/42files/core/push_swap/libft/ft_strmapi.o"
+  },
+  {
+    "arguments": [
+      "/usr/bin/cc",
+      "-Wall",
+      "-Wextra",
+      "-Werror",
+      "-c",
+      "-o",
+      "ft_striteri.o",
+      "ft_striteri.c"
+    ],
+    "directory": "/home/pachkyah/studying/Programming/42/42files/core/push_swap/libft",
+    "file": "/home/pachkyah/studying/Programming/42/42files/core/push_swap/libft/ft_striteri.c",
+    "output": "/home/pachkyah/studying/Programming/42/42files/core/push_swap/libft/ft_striteri.o"
+  },
+  {
+    "arguments": [
+      "/usr/bin/cc",
+      "-Wall",
+      "-Wextra",
+      "-Werror",
+      "-Iincludes",
+      "-Ilibft",
+      "-c",
+      "-o",
+      "obj/main.o",
+      "src/main.c"
+    ],
+    "directory": "/home/pachkyah/studying/Programming/42/42files/core/push_swap",
+    "file": "/home/pachkyah/studying/Programming/42/42files/core/push_swap/src/main.c",
+    "output": "/home/pachkyah/studying/Programming/42/42files/core/push_swap/obj/main.o"
+  },
+  {
+    "arguments": [
+      "/usr/bin/cc",
+      "-Wall",
+      "-Wextra",
+      "-Werror",
+      "-Iincludes",
+      "-Ilibft",
+      "-c",
+      "-o",
+      "obj/parse.o",
+      "src/parse.c"
+    ],
+    "directory": "/home/pachkyah/studying/Programming/42/42files/core/push_swap",
+    "file": "/home/pachkyah/studying/Programming/42/42files/core/push_swap/src/parse.c",
+    "output": "/home/pachkyah/studying/Programming/42/42files/core/push_swap/obj/parse.o"
+  },
+  {
+    "arguments": [
+      "/usr/bin/cc",
+      "-Wall",
+      "-Wextra",
+      "-Werror",
+      "-Iincludes",
+      "-Ilibft",
+      "-c",
+      "-o",
+      "obj/stack_init.o",
+      "src/stack_init.c"
+    ],
+    "directory": "/home/pachkyah/studying/Programming/42/42files/core/push_swap",
+    "file": "/home/pachkyah/studying/Programming/42/42files/core/push_swap/src/stack_init.c",
+    "output": "/home/pachkyah/studying/Programming/42/42files/core/push_swap/obj/stack_init.o"
+  },
+  {
+    "arguments": [
+      "/usr/bin/cc",
+      "-Wall",
+      "-Wextra",
+      "-Werror",
+      "-Iincludes",
+      "-Ilibft",
+      "-c",
+      "-o",
+      "obj/utils/error.o",
+      "src/utils/error.c"
+    ],
+    "directory": "/home/pachkyah/studying/Programming/42/42files/core/push_swap",
+    "file": "/home/pachkyah/studying/Programming/42/42files/core/push_swap/src/utils/error.c",
+    "output": "/home/pachkyah/studying/Programming/42/42files/core/push_swap/obj/utils/error.o"
+  },
+  {
+    "arguments": [
+      "/usr/bin/cc",
+      "-Wall",
+      "-Wextra",
+      "-Werror",
+      "-Iincludes",
+      "-Ilibft",
+      "-c",
+      "-o",
+      "obj/utils/free.o",
+      "src/utils/free.c"
+    ],
+    "directory": "/home/pachkyah/studying/Programming/42/42files/core/push_swap",
+    "file": "/home/pachkyah/studying/Programming/42/42files/core/push_swap/src/utils/free.c",
+    "output": "/home/pachkyah/studying/Programming/42/42files/core/push_swap/obj/utils/free.o"
+  },
+  {
+    "arguments": [
+      "/usr/bin/cc",
+      "-Wall",
+      "-Wextra",
+      "-Werror",
+      "-Iincludes",
+      "-Ilibft",
+      "-c",
+      "-o",
+      "obj/utils/is_sorted.o",
+      "src/utils/is_sorted.c"
+    ],
+    "directory": "/home/pachkyah/studying/Programming/42/42files/core/push_swap",
+    "file": "/home/pachkyah/studying/Programming/42/42files/core/push_swap/src/utils/is_sorted.c",
+    "output": "/home/pachkyah/studying/Programming/42/42files/core/push_swap/obj/utils/is_sorted.o"
+  },
+  {
+    "arguments": [
+      "/usr/bin/cc",
+      "-Wall",
+      "-Wextra",
+      "-Werror",
+      "-Iincludes",
+      "-Ilibft",
+      "-c",
+      "-o",
+      "obj/operations/swap.o",
+      "src/operations/swap.c"
+    ],
+    "directory": "/home/pachkyah/studying/Programming/42/42files/core/push_swap",
+    "file": "/home/pachkyah/studying/Programming/42/42files/core/push_swap/src/operations/swap.c",
+    "output": "/home/pachkyah/studying/Programming/42/42files/core/push_swap/obj/operations/swap.o"
+  },
+  {
+    "arguments": [
+      "/usr/bin/cc",
+      "-Wall",
+      "-Wextra",
+      "-Werror",
+      "-Iincludes",
+      "-Ilibft",
+      "-c",
+      "-o",
+      "obj/operations/push.o",
+      "src/operations/push.c"
+    ],
+    "directory": "/home/pachkyah/studying/Programming/42/42files/core/push_swap",
+    "file": "/home/pachkyah/studying/Programming/42/42files/core/push_swap/src/operations/push.c",
+    "output": "/home/pachkyah/studying/Programming/42/42files/core/push_swap/obj/operations/push.o"
+  },
+  {
+    "arguments": [
+      "/usr/bin/cc",
+      "-Wall",
+      "-Wextra",
+      "-Werror",
+      "-Iincludes",
+      "-Ilibft",
+      "-c",
+      "-o",
+      "obj/operations/rotate.o",
+      "src/operations/rotate.c"
+    ],
+    "directory": "/home/pachkyah/studying/Programming/42/42files/core/push_swap",
+    "file": "/home/pachkyah/studying/Programming/42/42files/core/push_swap/src/operations/rotate.c",
+    "output": "/home/pachkyah/studying/Programming/42/42files/core/push_swap/obj/operations/rotate.o"
+  },
+  {
+    "arguments": [
+      "/usr/bin/cc",
+      "-Wall",
+      "-Wextra",
+      "-Werror",
+      "-Iincludes",
+      "-Ilibft",
+      "-c",
+      "-o",
+      "obj/operations/reverse_rotate.o",
+      "src/operations/reverse_rotate.c"
+    ],
+    "directory": "/home/pachkyah/studying/Programming/42/42files/core/push_swap",
+    "file": "/home/pachkyah/studying/Programming/42/42files/core/push_swap/src/operations/reverse_rotate.c",
+    "output": "/home/pachkyah/studying/Programming/42/42files/core/push_swap/obj/operations/reverse_rotate.o"
+  },
+  {
+    "arguments": [
+      "/usr/bin/cc",
+      "-Wall",
+      "-Wextra",
+      "-Werror",
+      "-Iincludes",
+      "-Ilibft",
+      "-c",
+      "-o",
+      "obj/algos/sort_2.o",
+      "src/algos/sort_2.c"
+    ],
+    "directory": "/home/pachkyah/studying/Programming/42/42files/core/push_swap",
+    "file": "/home/pachkyah/studying/Programming/42/42files/core/push_swap/src/algos/sort_2.c",
+    "output": "/home/pachkyah/studying/Programming/42/42files/core/push_swap/obj/algos/sort_2.o"
+  },
+  {
+    "arguments": [
+      "/usr/bin/cc",
+      "-Wall",
+      "-Wextra",
+      "-Werror",
+      "-Iincludes",
+      "-Ilibft",
+      "-c",
+      "-o",
+      "obj/algos/sort_3.o",
+      "src/algos/sort_3.c"
+    ],
+    "directory": "/home/pachkyah/studying/Programming/42/42files/core/push_swap",
+    "file": "/home/pachkyah/studying/Programming/42/42files/core/push_swap/src/algos/sort_3.c",
+    "output": "/home/pachkyah/studying/Programming/42/42files/core/push_swap/obj/algos/sort_3.o"
+  },
+  {
+    "arguments": [
+      "/usr/bin/cc",
+      "-Wall",
+      "-Wextra",
+      "-Werror",
+      "-Iincludes",
+      "-Ilibft",
+      "-c",
+      "-o",
+      "obj/algos/sort_5.o",
+      "src/algos/sort_5.c"
+    ],
+    "directory": "/home/pachkyah/studying/Programming/42/42files/core/push_swap",
+    "file": "/home/pachkyah/studying/Programming/42/42files/core/push_swap/src/algos/sort_5.c",
+    "output": "/home/pachkyah/studying/Programming/42/42files/core/push_swap/obj/algos/sort_5.o"
+  },
+  {
+    "arguments": [
+      "/usr/bin/cc",
+      "-Wall",
+      "-Wextra",
+      "-Werror",
+      "-Iincludes",
+      "-Ilibft",
+      "-c",
+      "-o",
+      "obj/algos/radix.o",
+      "src/algos/radix.c"
+    ],
+    "directory": "/home/pachkyah/studying/Programming/42/42files/core/push_swap",
+    "file": "/home/pachkyah/studying/Programming/42/42files/core/push_swap/src/algos/radix.c",
+    "output": "/home/pachkyah/studying/Programming/42/42files/core/push_swap/obj/algos/radix.o"
+  }
+]
