@@ -15,9 +15,9 @@ The goal of the project is to deepen the understanding of:
 
 The program takes an input file, executes two commands connected by a pipe, and writes the result to an output file, mimicking the following shell command:
 
-'''bash
+```bash
 < infile cmd1 | cmd2 > outfile
-
+```
 
 ## Instructions
 ### Compilation
@@ -75,11 +75,11 @@ GNU Bash documentation (pipeline behavior)
 
 AI tools were used as a learning aid for:
 
-Understanding Unix system calls and process flow
+- Understanding Unix system calls and process flow
 
-Structuring the README.md file
+- Structuring the README.md file
 
-Reasoning about edge cases and error handling
+- Reasoning about edge cases and error handling
 
 All code implementation, debugging, and final decisions were performed manually by the student.
 
