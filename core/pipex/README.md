@@ -17,7 +17,7 @@ The program takes an input file, executes two commands connected by a pipe, and 
 
 '''bash
 < infile cmd1 | cmd2 > outfile
-'''
+
 
 ## Instructions
 ### Compilation
