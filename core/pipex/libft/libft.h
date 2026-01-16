@@ -6,12 +6,16 @@
 /*   By: ypachkou <ypachkou@student.42prague.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/05/28 15:18:11 by ypachkou          #+#    #+#             */
-/*   Updated: 2025/06/25 14:52:37 by ypachkou         ###   ########.fr       */
+/*   Updated: 2026/01/11 01:35:38 by ypachkou         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #ifndef LIBFT_H
 # define LIBFT_H
+
+# ifndef BUFFER_SIZE
+#  define BUFFER_SIZE 42
+# endif
 
 # include <stdlib.h>
 # include <unistd.h>
@@ -123,5 +127,9 @@ void	ft_lstiter(t_list *lst, void (*f)(void *));
 	// Apply a function to each element's content in the list
 t_list	*ft_lstmap(t_list *lst, void *(*f)(void *), void (*del)(void *));
 	// Create a new list by applying a function to each element's content
+
+///---Get next line part---
+char	*get_next_line(int fd);
+	// Gets the next line from a file
 
 #endif

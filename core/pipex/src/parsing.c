@@ -1,3 +1,15 @@
+/* ************************************************************************** */
+/*                                                                            */
+/*                                                        :::      ::::::::   */
+/*   parsing.c                                          :+:      :+:    :+:   */
+/*                                                    +:+ +:+         +:+     */
+/*   By: ypachkou <ypachkou@student.42prague.com    +#+  +:+       +#+        */
+/*                                                +#+#+#+#+#+   +#+           */
+/*   Created: 2026/01/10 22:28:55 by ypachkou          #+#    #+#             */
+/*   Updated: 2026/01/10 22:30:40 by ypachkou         ###   ########.fr       */
+/*                                                                            */
+/* ************************************************************************** */
+
 #include "pipex.h"
 
 static int get_cmd_start_index(t_pipex *px)
@@ -51,5 +63,4 @@ void parse_commands(t_pipex *px)
     for (int i = 0; i < px->cmd_count; i++ ){
         printf("cmd%d path: %s\n", i, px->cmds[i][0]); //debugger
     }
-
 }
