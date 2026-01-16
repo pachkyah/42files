@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_tolower.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: pachkyah <pachkyah@student.42.fr>          +#+  +:+       +#+        */
+/*   By: ypachkou <ypachkou@student.42prague.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/05/19 11:26:02 by ypachkou          #+#    #+#             */
-/*   Updated: 2025/06/25 01:35:20 by pachkyah         ###   ########.fr       */
+/*   Updated: 2025/06/25 14:05:46 by ypachkou         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,7 +14,7 @@
 
 /**
  * @brief Converts an uppercase letter to lowercase.
- *
+ * 
  * If @p c is an uppercase letter, converts it to its lowercase equivalent.
  * Otherwise, returns @p c unchanged.
  *

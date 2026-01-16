@@ -1,12 +1,12 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_lstiter.c                                       :+:      :+:    :+:   */
+/*   ft_lstiter_bonus.c                                 :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: pachkyah <pachkyah@student.42.fr>          +#+  +:+       +#+        */
+/*   By: ypachkou <ypachkou@student.42prague.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/06/22 22:16:15 by pachkyah          #+#    #+#             */
-/*   Updated: 2025/06/25 01:40:22 by pachkyah         ###   ########.fr       */
+/*   Updated: 2025/06/25 14:07:37 by ypachkou         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,8 +14,9 @@
 
 /**
  * @brief Iterates over the list and applies a function to each node's content.
- *
- * Applies the function @p f to the content of each node in the linked list @p lst.
+ * 
+ * Applies the function @p f to the content of each node 
+ * in the linked list @p lst.
  *
  * @param lst Pointer to the head of the list.
  * @param f Function to apply to each node's content.

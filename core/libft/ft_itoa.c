@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_itoa.c                                          :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: pachkyah <pachkyah@student.42.fr>          +#+  +:+       +#+        */
+/*   By: ypachkou <ypachkou@student.42prague.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/05/19 11:25:00 by ypachkou          #+#    #+#             */
-/*   Updated: 2025/06/25 01:07:54 by pachkyah         ###   ########.fr       */
+/*   Updated: 2025/06/25 14:03:06 by ypachkou         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,7 +14,7 @@
 
 /**
  * @brief Calculates the number of digits in an integer.
- *
+ * 
  * Helper function that returns the number of digits required
  * to represent @p n as a string, including space for the minus sign
  * if the number is negative.

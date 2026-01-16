@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_memmove.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: pachkyah <pachkyah@student.42.fr>          +#+  +:+       +#+        */
+/*   By: ypachkou <ypachkou@student.42prague.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/05/19 11:25:10 by ypachkou          #+#    #+#             */
-/*   Updated: 2025/06/25 01:12:49 by pachkyah         ###   ########.fr       */
+/*   Updated: 2025/06/25 14:04:47 by ypachkou         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,7 +14,7 @@
 
 /**
  * @brief Helper function for forward memory copy.
- *
+ * 
  * Copies @p n bytes from @p s to @p d in increasing memory address order.
  *
  * @param d Destination pointer.

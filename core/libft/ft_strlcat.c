@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_strlcat.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: pachkyah <pachkyah@student.42.fr>          +#+  +:+       +#+        */
+/*   By: ypachkou <ypachkou@student.42prague.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/05/19 11:25:39 by ypachkou          #+#    #+#             */
-/*   Updated: 2025/06/25 01:28:10 by pachkyah         ###   ########.fr       */
+/*   Updated: 2025/06/25 14:10:49 by ypachkou         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,7 +14,7 @@
 
 /**
  * @brief Appends src string to the end of dest string.
- *
+ * 
  * Appends the string @p src to the end of @p dest, ensuring that
  * the total length does not exceed @p size. The resulting string
  * is null-terminated if @p size is greater than 0.
@@ -22,7 +22,8 @@
  * @param dest The destination buffer.
  * @param src The source string to append.
  * @param size The full size of the destination buffer.
- * @return The total length of the string it tried to create (initial length of dest plus length of src).
+ * @return The total length of the string it tried to create
+ * (initial length of dest plus length of src).
  */
 size_t	ft_strlcat(char *dest, const char *src, size_t size)
 {

@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_memset.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: pachkyah <pachkyah@student.42.fr>          +#+  +:+       +#+        */
+/*   By: ypachkou <ypachkou@student.42prague.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/05/19 11:25:12 by ypachkou          #+#    #+#             */
-/*   Updated: 2025/06/25 01:13:36 by pachkyah         ###   ########.fr       */
+/*   Updated: 2025/06/25 14:04:50 by ypachkou         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,7 +14,7 @@
 
 /**
  * @brief Fills a block of memory with a specific byte value.
- *
+ * 
  * Sets the first @p n bytes of the memory area pointed to by @p ptr
  * to the byte value @p val (converted to unsigned char).
  *

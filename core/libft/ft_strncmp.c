@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_strncmp.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: pachkyah <pachkyah@student.42.fr>          +#+  +:+       +#+        */
+/*   By: ypachkou <ypachkou@student.42prague.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/05/19 11:25:50 by ypachkou          #+#    #+#             */
-/*   Updated: 2025/06/25 01:33:54 by pachkyah         ###   ########.fr       */
+/*   Updated: 2025/06/25 14:05:30 by ypachkou         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,7 +14,7 @@
 
 /**
  * @brief Compares up to n characters of two strings.
- *
+ * 
  * Compares the first @p n characters of the strings @p s1 and @p s2.
  * Returns 0 if they are equal, a negative value if @p s1 is less than @p s2,
  * or a positive value if @p s1 is greater than @p s2.

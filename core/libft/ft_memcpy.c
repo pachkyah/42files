@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_memcpy.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: pachkyah <pachkyah@student.42.fr>          +#+  +:+       +#+        */
+/*   By: ypachkou <ypachkou@student.42prague.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/05/19 11:13:50 by ypachkou          #+#    #+#             */
-/*   Updated: 2025/06/25 01:11:08 by pachkyah         ###   ########.fr       */
+/*   Updated: 2025/06/25 14:04:45 by ypachkou         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,7 +14,7 @@
 
 /**
  * @brief Copies bytes from source to destination memory.
- *
+ * 
  * Copies @p n bytes from memory area @p src to memory area @p dest.
  * The memory areas must not overlap; use ft_memmove() if they do.
  *

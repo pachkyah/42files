@@ -1,12 +1,12 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_lstlast.c                                       :+:      :+:    :+:   */
+/*   ft_lstlast_bonus.c                                 :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: pachkyah <pachkyah@student.42.fr>          +#+  +:+       +#+        */
+/*   By: ypachkou <ypachkou@student.42prague.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/06/22 22:05:33 by pachkyah          #+#    #+#             */
-/*   Updated: 2025/06/25 01:40:37 by pachkyah         ###   ########.fr       */
+/*   Updated: 2025/06/25 14:04:02 by ypachkou         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,7 +14,7 @@
 
 /**
  * @brief Returns the last node of the list.
- *
+ * 
  * Returns a pointer to the last node of the linked list @p lst.
  *
  * @param lst Pointer to the head of the list.

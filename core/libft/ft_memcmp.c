@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_memcmp.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: pachkyah <pachkyah@student.42.fr>          +#+  +:+       +#+        */
+/*   By: ypachkou <ypachkou@student.42prague.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/05/19 11:25:05 by ypachkou          #+#    #+#             */
-/*   Updated: 2025/06/25 01:10:08 by pachkyah         ###   ########.fr       */
+/*   Updated: 2025/06/25 14:04:43 by ypachkou         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,7 +14,7 @@
 
 /**
  * @brief Compares two memory blocks.
- *
+ * 
  * Compares up to @p n bytes of the memory areas pointed to by @p s1 and @p s2.
  * Returns 0 if they are equal, a negative value if the first differing byte
  * in @p s1 is less than that in @p s2, or a positive value if greater.

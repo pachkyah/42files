@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_putnbr_fd.c                                     :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: pachkyah <pachkyah@student.42.fr>          +#+  +:+       +#+        */
+/*   By: ypachkou <ypachkou@student.42prague.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/05/19 11:25:20 by ypachkou          #+#    #+#             */
-/*   Updated: 2025/06/25 01:15:57 by pachkyah         ###   ########.fr       */
+/*   Updated: 2025/06/25 14:04:57 by ypachkou         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,7 +14,7 @@
 
 /**
  * @brief Outputs an integer to a file descriptor.
- *
+ * 
  * Writes the integer @p n to the file descriptor @p fd. Handles edge cases
  * such as INT_MIN before performing recursion.
  *

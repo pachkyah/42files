@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_strlcpy.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: pachkyah <pachkyah@student.42.fr>          +#+  +:+       +#+        */
+/*   By: ypachkou <ypachkou@student.42prague.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/05/19 11:25:42 by ypachkou          #+#    #+#             */
-/*   Updated: 2025/06/25 01:29:42 by pachkyah         ###   ########.fr       */
+/*   Updated: 2025/06/25 14:05:21 by ypachkou         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,7 +14,7 @@
 
 /**
  * @brief Copies a string to a buffer of given size.
- *
+ * 
  * Copies up to @p size - 1 characters from the string @p src to
  * @p dest, null-terminating the result if @p size is not zero.
  *

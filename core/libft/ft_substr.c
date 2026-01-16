@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_substr.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: pachkyah <pachkyah@student.42.fr>          +#+  +:+       +#+        */
+/*   By: ypachkou <ypachkou@student.42prague.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/05/19 11:26:00 by ypachkou          #+#    #+#             */
-/*   Updated: 2025/06/25 01:34:59 by pachkyah         ###   ########.fr       */
+/*   Updated: 2025/06/25 14:05:43 by ypachkou         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,7 +14,7 @@
 
 /**
  * @brief Extracts a substring from a string.
- *
+ * 
  * Allocates and returns a substring from the string @p s,
  * starting at index @p start and of maximum length @p len.
  *

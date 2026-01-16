@@ -3,28 +3,14 @@
 /*                                                        :::      ::::::::   */
 /*   ft_strtrim.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: pachkyah <pachkyah@student.42.fr>          +#+  +:+       +#+        */
+/*   By: ypachkou <ypachkou@student.42prague.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/05/19 11:25:57 by ypachkou          #+#    #+#             */
-/*   Updated: 2025/06/25 01:34:36 by pachkyah         ###   ########.fr       */
+/*   Updated: 2025/06/25 14:42:05 by ypachkou         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
-
-// static int	is_in_set(char c, const char *set)
-// /*
-// 	Helper function for checking if character 'c' is in array 'set'
-// */
-// {
-// 	while (*set)
-// 	{
-// 		if (*set == c)
-// 			return (1);
-// 		set++;
-// 	}
-// 	return (0);
-// }
 
 /**
  * @brief Trims characters from the start and end of a string.

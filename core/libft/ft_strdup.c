@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_strdup.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: pachkyah <pachkyah@student.42.fr>          +#+  +:+       +#+        */
+/*   By: ypachkou <ypachkou@student.42prague.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/05/19 11:25:31 by ypachkou          #+#    #+#             */
-/*   Updated: 2025/06/25 01:26:06 by pachkyah         ###   ########.fr       */
+/*   Updated: 2025/06/25 14:05:09 by ypachkou         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,7 +14,7 @@
 
 /**
  * @brief Duplicates a string.
- *
+ * 
  * Allocates memory and returns a new string which is a duplicate
  * of the string @p s.
  *

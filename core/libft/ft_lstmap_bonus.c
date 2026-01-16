@@ -1,12 +1,12 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_lstmap.c                                        :+:      :+:    :+:   */
+/*   ft_lstmap_bonus.c                                  :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: pachkyah <pachkyah@student.42.fr>          +#+  +:+       +#+        */
+/*   By: ypachkou <ypachkou@student.42prague.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/06/22 22:17:39 by pachkyah          #+#    #+#             */
-/*   Updated: 2025/06/25 01:41:00 by pachkyah         ###   ########.fr       */
+/*   Updated: 2025/06/25 14:08:13 by ypachkou         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,8 +14,9 @@
 
 /**
  * @brief Creates a new list by applying a function to each node's content.
- *
- * Iterates over the list @p lst, applies the function @p f to each node's content,
+ * 
+ * Iterates over the list @p lst, 
+ * applies the function @p f to each node's content,
  * and creates a new list of the results. Uses @p del to free content if needed.
  *
  * @param lst Pointer to the head of the list.

@@ -1,12 +1,12 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_lstsize.c                                       :+:      :+:    :+:   */
+/*   ft_lstsize_bonus.c                                 :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: pachkyah <pachkyah@student.42.fr>          +#+  +:+       +#+        */
+/*   By: ypachkou <ypachkou@student.42prague.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/06/22 22:03:29 by pachkyah          #+#    #+#             */
-/*   Updated: 2025/06/25 01:41:57 by pachkyah         ###   ########.fr       */
+/*   Updated: 2025/06/25 14:04:33 by ypachkou         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,7 +14,7 @@
 
 /**
  * @brief Counts the number of nodes in the list.
- *
+ * 
  * Counts and returns the number of nodes in the linked list @p lst.
  *
  * @param lst Pointer to the head of the list.

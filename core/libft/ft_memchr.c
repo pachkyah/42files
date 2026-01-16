@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_memchr.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: pachkyah <pachkyah@student.42.fr>          +#+  +:+       +#+        */
+/*   By: ypachkou <ypachkou@student.42prague.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/05/19 11:25:03 by ypachkou          #+#    #+#             */
-/*   Updated: 2025/06/25 01:09:06 by pachkyah         ###   ########.fr       */
+/*   Updated: 2025/06/25 14:04:40 by ypachkou         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,7 +14,7 @@
 
 /**
  * @brief Searches for a byte in a memory block.
- *
+ * 
  * Scans the first @p n bytes of the memory area pointed to by @p s
  * for the first occurrence of the byte @p c. The search does not
  * stop at null bytes or newline characters!!!

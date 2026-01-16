@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_split.c                                         :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: pachkyah <pachkyah@student.42.fr>          +#+  +:+       +#+        */
+/*   By: ypachkou <ypachkou@student.42prague.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/05/19 11:25:26 by ypachkou          #+#    #+#             */
-/*   Updated: 2025/06/25 01:20:47 by pachkyah         ###   ########.fr       */
+/*   Updated: 2025/06/25 14:05:03 by ypachkou         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,7 +14,7 @@
 
 /**
  * @brief Counts the number of words separated by a delimiter.
- *
+ * 
  * Helper function that counts how many substrings are separated
  * by the character @p c in the string @p s.
  *
