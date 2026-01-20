@@ -6,7 +6,7 @@
 /*   By: ypachkou <ypachkou@student.42prague.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/01/10 22:28:55 by ypachkou          #+#    #+#             */
-/*   Updated: 2026/01/10 22:30:40 by ypachkou         ###   ########.fr       */
+/*   Updated: 2026/01/20 16:10:40 by ypachkou         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -47,6 +47,11 @@ static void fill_cmds_array(t_pipex *px, int start)
     while (i < px->cmd_count)
     {
         px->cmds[i] = split_command(px->argv[start + i], px->envp);
+        if (!px->cmds[i])
+        {
+            cleanup_pipex(px);
+            error_exit("Failed to parse command");
+        }
         i++;
     }
 }
@@ -54,13 +59,13 @@ static void fill_cmds_array(t_pipex *px, int start)
 void parse_commands(t_pipex *px)
 {
     //debug
-    printf("step 3: parsing commands\n");
+    //printf("step 3: parsing commands\n");
     int start;
 
     start = get_cmd_start_index(px);
     fill_cmds_array(px, start);
     
-    for (int i = 0; i < px->cmd_count; i++ ){
-        printf("cmd%d path: %s\n", i, px->cmds[i][0]); //debugger
-    }
+    // for (int i = 0; i < px->cmd_count; i++ ){
+    //     printf("cmd%d path: %s\n", i, px->cmds[i][0]); //debugger
+    // }
 }

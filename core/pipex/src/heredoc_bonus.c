@@ -6,40 +6,11 @@
 /*   By: ypachkou <ypachkou@student.42prague.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/01/10 22:28:42 by ypachkou          #+#    #+#             */
-/*   Updated: 2026/01/10 22:28:42 by ypachkou         ###   ########.fr       */
+/*   Updated: 2026/01/20 15:28:38 by ypachkou         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "pipex.h"
-
-static char *read_line(void)
-{
-    char    *line;
-    char    c;
-    int     i;
-    int     r;
-
-    line = malloc(1024);
-    if (!line)
-        return (NULL);
-    i = 0;
-    while (i < 1023)
-    {
-        r = read(0, &c, 1);
-        if (r <= 0)
-            break;
-        line[i++] = c;
-        if (c == '\n')
-            break;
-    }
-    line[i] = '\0';
-    if (i == 0)
-    {
-        free(line);
-        return (NULL);
-    }
-    return (line);
-}
 
 void handle_heredoc(t_pipex *px)
 {
@@ -49,23 +20,32 @@ void handle_heredoc(t_pipex *px)
 
     if (!px->here_doc)
         return;
+
     if (pipe(pipefd) < 0)
+    {
+        cleanup_pipex(px);
         error_exit("pipe");
+    }
+
     len = ft_strlen(px->limiter);
     while (1)
     {
         write(1, "heredoc> ", 9);
-        line = read_line();
+        line = get_next_line(0);
         if (!line)
             break;
+
+        // compare with limiter
         if (ft_strncmp(line, px->limiter, len) == 0 && line[len] == '\n')
         {
             free(line);
             break;
         }
+
         write(pipefd[1], line, ft_strlen(line));
         free(line);
     }
+
     close(pipefd[1]);
     px->infile = pipefd[0];
 }

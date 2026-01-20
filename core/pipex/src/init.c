@@ -6,7 +6,7 @@
 /*   By: ypachkou <ypachkou@student.42prague.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/01/10 22:28:46 by ypachkou          #+#    #+#             */
-/*   Updated: 2026/01/10 22:28:47 by ypachkou         ###   ########.fr       */
+/*   Updated: 2026/01/20 16:14:05 by ypachkou         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -50,16 +50,25 @@ static void allocate_arrays(t_pipex *px)
 {
     px->cmds = malloc(sizeof(char **) * px->cmd_count);
     if (!px->cmds)
+    {
+        cleanup_pipex(px);
         error_exit("malloc cmds");
+    }
+    for (int i = 0; i < px->cmd_count; i++)
+        px->cmds[i] = NULL;
     px->pids = malloc(sizeof(pid_t) * px->cmd_count);
     if (!px->pids)
+    {
+        cleanup_pipex(px);
         error_exit("malloc pids");
+    }
 }
+
 
 void init_pipex(t_pipex *px, int argc, char **argv, char **envp)
 {
     //debug
-    printf("step 1: init\n");
+    //printf("step 1: init\n");
 
     init_basic_fields(px, argc, argv, envp);
     detect_heredoc(px);

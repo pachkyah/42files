@@ -1,33 +1,18 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   main.c                                             :+:      :+:    :+:   */
+/*   heredoc.c                                          :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: ypachkou <ypachkou@student.42prague.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2026/01/10 22:28:50 by ypachkou          #+#    #+#             */
-/*   Updated: 2026/01/20 15:57:10 by ypachkou         ###   ########.fr       */
+/*   Created: 2026/01/20 14:03:47 by ypachkou          #+#    #+#             */
+/*   Updated: 2026/01/20 14:04:23 by ypachkou         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "pipex.h"
 
-int	main(int argc, char **argv, char **envp)
+void handle_heredoc(t_pipex *px)
 {
-	t_pipex px;
-	int status;
-
-
-	if (argc < 5)
-	{
-		write(2, "Usage: ./pipex infile cmd1 cmd2 outfile\n", 41);
-		return (1);
-	}
-	init_pipex(&px, argc, argv, envp);
-	open_files(&px);
-	parse_commands(&px);
-	create_pipes(&px);
-	status = execute_commands(&px);
-	cleanup_pipex(&px);
-	return (status);
+    (void)px;
 }

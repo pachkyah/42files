@@ -6,7 +6,7 @@
 /*   By: ypachkou <ypachkou@student.42prague.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/01/10 22:28:29 by ypachkou          #+#    #+#             */
-/*   Updated: 2026/01/10 22:28:31 by ypachkou         ###   ########.fr       */
+/*   Updated: 2026/01/20 15:38:20 by ypachkou         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -37,7 +37,14 @@ static void free_pipes(t_pipex *px)
     i = 0;
     while (i < px->pipe_count)
     {
-        free(px->pipes[i]);
+        if (px->pipes[i])
+        {
+            if (px->pipes[i][0] >= 0)
+                close(px->pipes[i][0]);
+            if (px->pipes[i][1] >= 0)
+                close(px->pipes[i][1]);
+            free(px->pipes[i]);
+        }
         i++;
     }
     free(px->pipes);
@@ -57,7 +64,7 @@ static void close_files(t_pipex *px)
 void cleanup_pipex(t_pipex *px)
 {
     //debug
-    printf("step 6: open files\n");
+    //printf("step 6: cleanup pipex\n");
 
     close_files(px);
     free_cmds(px);

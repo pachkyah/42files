@@ -22,24 +22,25 @@ The program takes an input file, executes two commands connected by a pipe, and 
 ## Instructions
 ### Compilation
 
-Compile the project using:
-
+Standart compilatio using:
+```bash
 make
+```
+or
 
-Useful Makefile rules:
-
-make clean
-
-make fclean
-
-make re
-
+```bash
+make bonus
+```
 ### Execution
 
 The program must be executed as follows:
-
+```bash
+./pipex infile "cmd1" "cmd2" ... "cmdn" outfile
+```
+or 
+```bash
 ./pipex infile "cmd1" "cmd2" outfile
-
+```
 # Example:
 
 ./pipex input.txt "grep hello" "wc -l" output.txt
@@ -56,7 +57,7 @@ Error messages are printed to standard error.
 
 ## Resources
 Technical References
-
+```bash
 man pipe
 
 man fork
@@ -66,7 +67,7 @@ man execve
 man dup2
 
 man wait
-
+```
 Advanced Programming in the UNIX Environment – W. Richard Stevens
 
 GNU Bash documentation (pipeline behavior)
@@ -76,13 +77,7 @@ GNU Bash documentation (pipeline behavior)
 AI tools were used as a learning aid for:
 
 - Understanding Unix system calls and process flow
-
 - Structuring the README.md file
-
 - Reasoning about edge cases and error handling
 
 All code implementation, debugging, and final decisions were performed manually by the student.
-
-## Notes
-
-This project follows the 42 Norm and subject requirements.

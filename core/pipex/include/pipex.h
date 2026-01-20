@@ -6,7 +6,7 @@
 /*   By: ypachkou <ypachkou@student.42prague.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/01/10 22:28:17 by ypachkou          #+#    #+#             */
-/*   Updated: 2026/01/10 22:28:18 by ypachkou         ###   ########.fr       */
+/*   Updated: 2026/01/20 15:58:48 by ypachkou         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -64,7 +64,7 @@ void    create_pipes(t_pipex *px);
 void    close_pipes(t_pipex *px);
 
 /* exec */
-void    execute_commands(t_pipex *px);
+int    execute_commands(t_pipex *px);
 
 /* heredoc */
 void    handle_heredoc(t_pipex *px);

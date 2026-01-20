@@ -6,7 +6,7 @@
 /*   By: ypachkou <ypachkou@student.42prague.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/01/10 22:28:38 by ypachkou          #+#    #+#             */
-/*   Updated: 2026/01/10 22:28:39 by ypachkou         ###   ########.fr       */
+/*   Updated: 2026/01/20 16:55:06 by ypachkou         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,9 +18,13 @@ static void open_infile(t_pipex *px)
     if (px->here_doc)
         return;
     px->infile = open(px->argv[1], O_RDONLY);
-    printf("infile fd = %d\n", px->infile); //debugginh
+    //printf("infile fd = %d\n", px->infile); //debugginh
     if (px->infile < 0)
+    {
         perror(px->argv[1]);
+        //cleanup_pipex(px);
+        //error_exit("Invalid infile");
+    }
 }
 
 static void open_outfile(t_pipex *px)
@@ -31,17 +35,28 @@ static void open_outfile(t_pipex *px)
     else
         px->outfile = open(px->argv[px->argc - 1],
                 O_WRONLY | O_CREAT | O_TRUNC, 0644);
-    printf("outfile fd = %d\n", px->outfile); //debuggin
+    //printf("outfile fd = %d\n", px->outfile); //debuggin
     if (px->outfile < 0)
+    {
         perror(px->argv[px->argc - 1]);
+        cleanup_pipex(px);
+        error_exit("Invalid outfile");
+    }
 }
 
 void open_files(t_pipex *px)
 {
     //debug
-    printf("step 2: open files\n");
+    //printf("step 2: open files\n");
 
-    open_infile(px);
-    handle_heredoc(px);
+    
+    if (!px->here_doc)
+    {
+		open_infile(px);
+    } 
+	else
+	{
+        handle_heredoc(px);
+	}
     open_outfile(px);
 }

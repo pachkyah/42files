@@ -1,0 +1,4 @@
+USER         PID %CPU %MEM    VSZ   RSS TTY      STAT START   TIME COMMAND
+ypachkou  221967  0.0  0.0      0     0 pts/0    Z+   17:11   0:00 [date] <defunct>
+ypachkou  221968  0.0  0.0      0     0 pts/0    Z+   17:11   0:00 [env] <defunct>
+ypachkou  221969  0.0  0.0      0     0 pts/0    Z+   17:11   0:00 [ls] <defunct>
