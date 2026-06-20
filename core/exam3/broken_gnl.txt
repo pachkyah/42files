@@ -1,0 +1,148 @@
+Assignment name : broken_gnl
+Expected files : broken_gnl.c
+Allowed functions: read, malloc, free
+• -------------------------------------------------------------------------------
+
+Write a function named get_next_line that will read one line from a file descriptor each time it is called, without memory leaks and with correct behavior. The function must use a static variable to store leftover data between calls.
+
+The function must be declared as follows:
+
+char get_next_line(int fd);
+You will find in this directory a file containing a part of the code you will need, but it contains several bugs and memory leaks. You must repair it without changing the function signature.
+
+Your function must manage only the following constraints:
+
+It must use a static buffer to store data between calls
+
+It must work correctly for any positive value of BUFFER_SIZE (defined at compilation)
+
+It must return the line read including the terminating '
+' character if present
+
+It must return NULL when there is nothing more to read or an error occurs
+
+It must not have any memory leaks
+
+You don't have to handle:
+
+Multiple file descriptors simultaneously
+
+Binary files
+
+The case where BUFFER_SIZE is undefined or negative
+
+To test your program, compare your results with the expected behavior of reading lines from a file descriptor.
+
+Hint: You may need to read the man of read and understand how static variables work.
+
+#include <broken_gnl.h>
+
+char ft_strchr(char *s, int c)
+{
+int i = 0;
+while (s[i] && s[i] != c)
+i++;
+if (s[i] == c)
+return (s + i);
+else
+return (NULL);
+}
+
+void *ft_memcpy(void *dest, const void *src, size_t n)
+{
+size_t i = 0;
+while (i < n)
+{
+((char *)dest)[i] = ((char *)src)[i];
+i++;
+}
+return (dest);
+}
+
+size_t ft_strlen(char *s)
+{
+size_t ret = 0;
+while (*s)
+{
+s++;
+ret++;
+}
+return (ret);
+}
+
+int str_append_mem(char **s1, char *s2, size_t size2)
+{
+size_t size1 = s1 ? ft_strlen(s1) : 0;
+char *tmp = malloc(size2 + size1 + 1);
+if (!tmp)
+return (0);
+if (*s1)
+ft_memcpy(tmp, *s1, size1);
+ft_memcpy(tmp + size1, s2, size2);
+tmp [size1 + size2] = 0;
+free(*s1);
+*s1 = tmp;
+return (1);
+}
+
+int str_append_str(char **s1, char s2)
+{
+return (str_append_mem(s1, s2, ft_strlen(s2)));
+}
+
+void ft_memmove(void *dest, const void *src, size_t n)
+{
+if (dest < src)
+return (ft_memcpy(dest, src, n));
+else if (dest == src)
+return (dest);
+size_t i = n;
+while (i > 0)
+{
+i--;
+((char *)dest)[i] = ((char )src)[i];
+}
+return (dest);
+}
+
+char get_next_line(int fd)
+{
+static char b[BUFFER_SIZE + 1] = () ;
+char *ret = NULL;
+
+char *tmp = ft_strchr(b, '
+');
+while (!tmp)
+{
+if (!str_append_str(&ret, b))
+return (NULL);
+b[0] = '';
+int read_ret = read(fd, b, BUFFER_SIZE);
+if (read_ret == -1)
+return (NULL);
+if (read_ret == 0)
+break;
+b[read_ret] = 0;
+tmp = ft_strchr(b, '
+');
+}
+if (tmp)
+{
+if (!str_append_mem(&ret, b, tmp - b + 1))
+{
+free(ret);
+return (NULL);
+}
+ft_memmove(b, tmp + 1, ft_strlen(tmp + 1) + 1);
+}
+else
+{
+b[0] = '';
+if (!ret || !*ret)
+{
+free(ret);
+return (NULL);
+}
+}
+return (ret);
+}
